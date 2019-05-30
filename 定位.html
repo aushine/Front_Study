@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .con{
+            width:500px;
+            height:500px;
+            margin:0 auto;
+            border:1px solid black;
+            position:relative;
+        }
+        .con div{
+            width:240px;
+            height:240px;
+            margin:10px;
+            position:absolute;
+        }
+        .box1{
+            left:10px;
+            top:10px;
+            background-color: lightskyblue;
+        }
+        .box2{
+            left:30px;
+            top:30px;
+            background-color: #66ccff;
+            z-index: 10;
+
+        }
+        .box3{
+            left:50px;
+            top:50px;
+            background-color: deepskyblue;
+        }
+        .box4{
+            left:70px;
+            top:70px;
+            background-color: dodgerblue;
+            z-index: 11;
+         }
+
+
+    </style>
+</head>
+<body>
+<div class="con">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</div>
+</body>
+</html>
