@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92bcc03-d8ba-484e-b299-9a590bd207e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/6-4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/goods.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/adv01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/adv02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/banner01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/banner02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/banner03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/banner04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/banner05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/banner06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/goods.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/images/slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day_day_fresh/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/goods.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/goods.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,42 +47,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/定位.html">
+        <entry file="file://$PROJECT_DIR$/6-4.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+            <state>
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/定位练习.html">
+        <entry file="file://$PROJECT_DIR$/day_day_fresh/css/reset.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
-              <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="854">
+              <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day_day_fresh/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/6-4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo0.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/day_day_fresh/css/main.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -119,6 +126,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -155,13 +163,16 @@
         <option value="$PROJECT_DIR$/sprite.html" />
         <option value="$PROJECT_DIR$/定位练习.html" />
         <option value="$PROJECT_DIR$/6-4.html" />
+        <option value="$PROJECT_DIR$/day_day_fresh/css/reset.css" />
+        <option value="$PROJECT_DIR$/day_day_fresh/css/main.css" />
+        <option value="$PROJECT_DIR$/day_day_fresh/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1583" />
-    <option name="y" value="-357" />
-    <option name="width" value="1727" />
+    <option name="x" value="-920" />
+    <option name="y" value="116" />
+    <option name="width" value="1363" />
     <option name="height" value="930" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -172,8 +183,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,7 +195,13 @@
             <path>
               <item name="front_study_Rode_2" type="b2602c69:ProjectViewProjectNode" />
               <item name="front_study_Rode_2" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="day_day_fresh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front_study_Rode_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="front_study_Rode_2" type="462c0819:PsiDirectoryNode" />
+              <item name="day_day_fresh" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,7 +214,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day_day_fresh/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -207,11 +225,12 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="M:\HTM_TEST\front_study_Rode_2\day_day_fresh\images" />
+      <recent name="M:\HTM_TEST\front_study_Rode_2\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="M:\HTM_TEST\front_study_Rode_2" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="M:\HTM_TEST\front_study_Rode_2\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -258,7 +277,8 @@
       <workItem from="1559194299723" duration="21732000" />
       <workItem from="1559381520143" duration="717000" />
       <workItem from="1559403608741" duration="70000" />
-      <workItem from="1559631637770" duration="6384000" />
+      <workItem from="1559631637770" duration="7034000" />
+      <workItem from="1559649205442" duration="3583000" />
     </task>
     <task id="LOCAL-00001" summary="ab">
       <created>1559037433989</created>
@@ -330,17 +350,24 @@
       <option name="project" value="LOCAL" />
       <updated>1559403639358</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ab">
+      <created>1559647295384</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559647295387</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70216000" />
+    <option name="totallyTimeSpent" value="74449000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1269" y="-44" width="1727" height="930" extended-state="0" />
+    <frame x="-1124" y="124" width="1363" height="930" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.122375526" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1580967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -542,6 +569,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/定位练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4284">
+          <caret line="119" selection-start-line="119" selection-end-line="119" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo0.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -579,22 +616,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/定位练习.html">
+    <entry file="file://$PROJECT_DIR$/6-4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state>
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6-4.html">
+    <entry file="file://$PROJECT_DIR$/day_day_fresh/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        <state relative-caret-position="854">
+          <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_day_fresh/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_day_fresh/css/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
