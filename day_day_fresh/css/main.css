@@ -36,10 +36,9 @@
     display:none;
 }
 .center_con{
-    width:1200px;
     height:115px;
-    background:gray;
-    margin:0 auto;
+
+    /*background:gray;*/
 }
 .bg{
     height:1200px;
@@ -49,18 +48,196 @@
     background:white;
 }
 .logo{
-    background:darkcyan;
     padding-top: 29px;
     padding-left: 17px;
-    display:inline-block;
 }
 .search{
+    border:1px solid #37ab40;
     width:618px;
     height:40px;
-    background:cyan;
+    margin: 34px 0 0 123px;
+    background: url("../images/icons.png")10px 10px no-repeat;
 }
 
 .chart{
+    margin-top: 34px;
+    width:200px;
+    height:40px;
+}
 
-    background:darkblue;
+.input_text{
+    margin-left: 36px;
+    border:0;
+    width:480px;
+    height:38px;
+    outline: none;
+    float:left
+}
+.input_sub{
+    color:white;
+    border:0;
+    width:102px;
+    height:40px;
+    background:#37ab40;
+    cursor:pointer;
+}
+.chart_link{
+    width:100px;
+    height:38px;
+    border-bottom:1px solid #ddd;
+    color:#37ab40;
+    line-height: 38px;
+    padding-left: 45px;
+    background: url("../images/icons.png") 10px -42px#f7f7f7 no-repeat;
+}
+.chart_num{
+    width:39px;
+    height:39px;
+    font-size: 14px;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+    background:orange;
+
+}
+
+.center_menu{
+    height:40px;
+    border-bottom:2px solid #37ab40;
+}
+.center_con01{
+    height:40px;
+}
+.center_con01 h2{
+    color:white;
+    width:200px;
+    height:40px;
+    background: #37ab40;
+    float:left;
+    line-height: 40px;
+    text-align: center;
+}
+
+.center_con01 ul, .center_con01 ul li{
+    float:left;
+}
+.center_con01 ul li{
+    font-size: 12px;
+    margin-top: 12px;
+}
+.center_con01 ul li a:hover{
+    color:orange;
+}
+.center_con01 ul li a{
+    color:gray;
+    padding:0 20px;
+    border-right: 1px solid #ddd;
+}
+.center_con02{
+    height:270px;
+}
+.sub_menu{
+    width:200px;
+    height:270px;
+}
+.sub_menu ul{
+    width:200px;
+    height:270px;
+
+}
+.sub_menu ul li{
+    font-size: 14px;
+    background: url("../images/icons.png")white 177px -389px no-repeat;
+    width:199px;
+    height:44px;
+    border:1px solid #ddd;
+    text-indent: 71px;
+    line-height: 44px;
+    border-top: 0;
+}
+.sub_menu ul li .icon01{
+    display:block;
+    background: url("../images/icons.png")32px -91px no-repeat;
+}
+.sub_menu ul li .icon02{
+    display:block;
+    background: url("../images/icons.png")32px -141px no-repeat;
+}
+.sub_menu ul li .icon03{
+    display:block;
+    background: url("../images/icons.png")32px -191px no-repeat;
+}
+.sub_menu ul li .icon04{
+    display:block;
+    background: url("../images/icons.png")32px -241px no-repeat;
+}
+.sub_menu ul li .icon05{
+    display:block;
+    background: url("../images/icons.png")32px -291px no-repeat;
+}
+.sub_menu ul li .icon06{
+    display:block;
+    background: url("../images/icons.png")32px -341px no-repeat;
+}
+.slide_con{
+    width:760px;
+    height:270px;
+    background: darkcyan;
+    overflow: hidden;
+    position:relative;
+}
+.slide{
+    width:4560px;
+    height:270px;
+    background:gray;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+.slide li{
+    float:left;
+}
+.prev, .next{
+    height:30px;
+    width:20px;
+    position:absolute;
+    background:url("../images/icons.png");
+    cursor:pointer;
+}
+.prev{
+    left:0;
+    top:50%;
+    background-position: left -996px;
+}
+.next{
+    right:0;
+    top:50%;
+    background-position: left -1045px;
+}
+.points{
+    width:100%;
+    height:11px;
+    position:absolute;
+    bottom:9px;
+
+    font-size: 0;
+    text-align: center;
+}
+.points li{
+    background: cyan;
+    width:11px;
+    height:11px;
+    margin:0 5px 0;
+    display:inline-block;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.points .active{
+    background: darkcyan;
+}
+
+.advs{
+    width:240px;
+    height:270px;
+    background: deepskyblue;
 }
