@@ -1,0 +1,66 @@
+.header_con{
+    z-index: 999;
+    height:29px;
+    background:#f7f7f7;
+    border-bottom:1px solid #ddd;
+}
+.header{
+    width:1200px;
+    margin:0 auto;
+}
+
+.login_btns li,.user_info li{
+    float:left;
+}
+
+.login_btns li a, .login_btns span,.user_info li a, .user_info span{
+    display:block;
+    font-size:12px;
+    line-height: 29px;
+    color:black;
+}
+.login_btns li a:hover, .user_info li a:hover{
+    color:orange;
+}
+.login_btns li span, .user_info li span{
+    margin:0 10px 0;
+}
+.welcome{
+    font-size:12px;
+    line-height: 29px;
+    display:inline-block;
+}
+.user_login_after{
+    line-height: 29px;
+    font-size: 12px;
+    display:none;
+}
+.center_con{
+    width:1200px;
+    height:115px;
+    background:gray;
+    margin:0 auto;
+}
+.bg{
+    height:1200px;
+    width:1200px;
+    margin:0 auto;
+   /* border:1px solid red;*/
+    background:white;
+}
+.logo{
+    background:darkcyan;
+    padding-top: 29px;
+    padding-left: 17px;
+    display:inline-block;
+}
+.search{
+    width:618px;
+    height:40px;
+    background:cyan;
+}
+
+.chart{
+
+    background:darkblue;
+}
