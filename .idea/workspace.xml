@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92bcc03-d8ba-484e-b299-9a590bd207e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/b.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day_day_fresh/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/day_day_fresh/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day_day_fresh/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/day_day_fresh/index.html" afterDir="false" />
@@ -33,20 +32,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/day_day_fresh/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+            <state relative-caret-position="-648">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day_day_fresh/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="232" column="18" selection-start-line="232" selection-start-column="18" selection-end-line="232" selection-end-column="18" />
+            <state relative-caret-position="349">
+              <caret line="198" column="1" lean-forward="true" selection-start-line="198" selection-start-column="1" selection-end-line="198" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -108,8 +107,8 @@
         <option value="$PROJECT_DIR$/6-4.html" />
         <option value="$PROJECT_DIR$/day_day_fresh/css/reset.css" />
         <option value="$PROJECT_DIR$/b.html" />
-        <option value="$PROJECT_DIR$/day_day_fresh/index.html" />
         <option value="$PROJECT_DIR$/day_day_fresh/css/main.css" />
+        <option value="$PROJECT_DIR$/day_day_fresh/index.html" />
       </list>
     </option>
   </component>
@@ -117,10 +116,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="141" />
-    <option name="y" value="36" />
-    <option name="width" value="1689" />
-    <option name="height" value="972" />
+    <option name="x" value="136" />
+    <option name="y" value="68" />
+    <option name="width" value="1687" />
+    <option name="height" value="964" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -130,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -143,23 +143,10 @@
               <item name="front_study_Rode_2" type="462c0819:PsiDirectoryNode" />
               <item name="day_day_fresh" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="front_study_Rode_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_study_Rode_2" type="462c0819:PsiDirectoryNode" />
-              <item name="day_day_fresh" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="front_study_Rode_2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="front_study_Rode_2" type="462c0819:PsiDirectoryNode" />
-              <item name="day_day_fresh" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,7 +225,8 @@
       <workItem from="1559694867885" duration="11433000" />
       <workItem from="1559716244667" duration="14931000" />
       <workItem from="1559735609534" duration="79000" />
-      <workItem from="1559735716517" duration="4830000" />
+      <workItem from="1559735716517" duration="7427000" />
+      <workItem from="1559809880849" duration="2952000" />
     </task>
     <task id="LOCAL-00001" summary="ab">
       <created>1559037433989</created>
@@ -331,11 +319,25 @@
       <option name="project" value="LOCAL" />
       <updated>1559716406360</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ab">
+      <created>1559741091118</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1559741091118</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ab">
+      <created>1559741181780</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1559741181780</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106430000" />
+    <option name="totallyTimeSpent" value="111979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,15 +349,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="413" y="34" width="1689" height="972" extended-state="0" />
+    <frame x="136" y="68" width="1687" height="964" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13136894" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13275968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" order="0" visible="true" weight="0.21121718" />
+      <window_info anchor="bottom" id="Statistic" order="0" weight="0.2987952" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Run" order="3" />
@@ -369,7 +371,7 @@
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24953903" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Maven" order="4" />
@@ -384,6 +386,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ab" />
     <option name="LAST_COMMIT_MESSAGE" value="ab" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/img.html">
@@ -587,16 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/b.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day_day_fresh/images/banner05.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -618,17 +614,30 @@
     <entry file="file://$PROJECT_DIR$/day_day_fresh/images/banner06.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/day_day_fresh/index.html">
+    <entry file="file://$PROJECT_DIR$/day_day_fresh/images/adv02.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/b.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+        <state relative-caret-position="540">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/day_day_fresh/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="232" column="18" selection-start-line="232" selection-start-column="18" selection-end-line="232" selection-end-column="18" />
+        <state relative-caret-position="349">
+          <caret line="198" column="1" lean-forward="true" selection-start-line="198" selection-start-column="1" selection-end-line="198" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day_day_fresh/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
