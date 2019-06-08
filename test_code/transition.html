@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box1{
+            width:200px;
+            height:200px;
+            background:#66ccff;
+            transition:width 0.4s ease , height 0.4s ease 0.4s;
+        }
+        .box1:hover{
+            width:800px;
+            height:800px;
+        }
+        .banner_con{
+            width:200px;
+            height:300px;
+            position:relative;
+            overflow:hidden;
+        }
+        .banner_con:hover .pic_info{
+
+            bottom:0;
+        }
+        .pic_info{
+            width:200px;
+            height:120px;
+            background:rgba(0,0,0,0.5);
+            color:white;
+            position:absolute;
+            left:0;
+            bottom:-120px;
+            transition:all 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="banner_con">
+    <img src="../day_day_fresh/images/banner01.jpg" alt="banner">
+    <div class="pic_info">
+        <h3>文字标题</h3>
+        <span>图片文字说明,图片文字说明,图片文字说明</span>
+    </div>
+</div>
+</body>
+</html>
