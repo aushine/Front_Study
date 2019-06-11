@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        div{
+            float:left
+        }
+        .box1{
+            width:300px;
+            height:300px;
+            border:2px solid red;
+            background-color: gray;
+            transform:rotateY(0deg);
+            margin-top: 40px;
+            transform-style:preserve-3d;
+            transition:all 0.4s ease;
+        }
+        .box1:hover{
+            background:pink;
+            transform: rotateY(180deg);
+        }
+        .box2{
+            width:300px;
+            height:300px;
+            border:2px solid red;
+            background-color: gray;
+            transform:rotateY(0deg);
+            margin-top: 40px;
+            transition:all 1s ease;
+        }
+        .box2:hover{
+            background:pink;
+            transform:perspective(800px) rotateZ(180deg);
+        }
+        .box3{
+            width:300px;
+            height:300px;
+            border:2px solid red;
+            background-color: gray;
+            transform:rotateY(0deg);
+            margin-top: 40px;
+            transition:all 0.4s ease;
+        }
+        .box3:hover{
+            background:pink;
+            transform:perspective(800px) rotateX(180deg);
+        }
+        .box4{
+            width:300px;
+            height:300px;
+            border:2px solid red;
+            background-color: gray;
+            transform:rotateY(0deg);
+            margin-top: 40px;
+            transition:all 0.4s ease;
+        }
+        .box4:hover{
+            background:pink;
+            transform:perspective(800px) translateZ(300px);
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+<div class="box4"></div>
+</body>
+</html>
