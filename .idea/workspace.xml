@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d92bcc03-d8ba-484e-b299-9a590bd207e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daliy_fresh_m/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/daliy_fresh_m/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_code/js-01.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_code/js-01.html" afterDir="false" />
-    </list>
+    <list default="true" id="d92bcc03-d8ba-484e-b299-9a590bd207e5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,20 +28,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daliy_fresh_m/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="271">
+              <caret line="120" column="48" lean-forward="true" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/daliy_fresh_m/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+            <state relative-caret-position="379">
+              <caret line="48" column="15" lean-forward="true" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -53,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/daliy_fresh_m/css/reset.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
+            <state relative-caret-position="595">
               <caret line="44" column="16" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
             </state>
           </provider>
@@ -123,8 +119,8 @@
         <option value="$PROJECT_DIR$/test_code/a.css" />
         <option value="$PROJECT_DIR$/test_code/js-01.html" />
         <option value="$PROJECT_DIR$/daliy_fresh_m/css/reset.css" />
-        <option value="$PROJECT_DIR$/daliy_fresh_m/css/main.css" />
         <option value="$PROJECT_DIR$/daliy_fresh_m/index.html" />
+        <option value="$PROJECT_DIR$/daliy_fresh_m/css/main.css" />
       </list>
     </option>
   </component>
@@ -132,8 +128,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="61" />
-    <option name="y" value="41" />
+    <option name="x" value="47" />
+    <option name="y" value="4" />
     <option name="width" value="1770" />
     <option name="height" value="1031" />
   </component>
@@ -270,7 +266,7 @@
       <workItem from="1560866809204" duration="1888000" />
       <workItem from="1560914079892" duration="9841000" />
       <workItem from="1560954465453" duration="105000" />
-      <workItem from="1561011653463" duration="14134000" />
+      <workItem from="1561011653463" duration="14968000" />
     </task>
     <task id="LOCAL-00001" summary="ab">
       <created>1559037433989</created>
@@ -426,11 +422,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560940624086</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="2019-6-20">
+      <created>1561026786541</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1561026786541</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173714000" />
+    <option name="totallyTimeSpent" value="174548000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -442,16 +445,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="61" y="41" width="1770" height="1031" extended-state="0" />
+    <frame x="47" y="4" width="1770" height="1031" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13976608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13976608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info id="Web" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Statistic" order="0" weight="0.31661093" />
+      <window_info active="true" anchor="bottom" id="Statistic" order="0" visible="true" weight="0.16722408" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Run" order="3" />
@@ -483,7 +486,8 @@
     <MESSAGE value="2019-6-16" />
     <MESSAGE value="2019-6-18" />
     <MESSAGE value="2019-6-19" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-6-19" />
+    <MESSAGE value="2019-6-20" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-6-20" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -781,22 +785,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/daliy_fresh_m/css/reset.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
+        <state relative-caret-position="595">
           <caret line="44" column="16" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daliy_fresh_m/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="58" column="37" lean-forward="true" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/daliy_fresh_m/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="271">
+          <caret line="120" column="48" lean-forward="true" selection-start-line="120" selection-start-column="48" selection-end-line="120" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daliy_fresh_m/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="48" column="15" lean-forward="true" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
         </state>
       </provider>
     </entry>
