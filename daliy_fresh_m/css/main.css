@@ -43,12 +43,21 @@
 	font:normal 14px/16px 'Microsoft Yahei';
 	color:#939291;
 	float:left;
-	margin:0 1.5rem 0;
-
+	margin:0 1.65rem 0;
 }
-@media (max-width: 364px) {
+@media (max-width: 420px) {
     .footer li{
-        margin:0 1.2rem 0;
+        margin:0 1.455rem 0;
+    }
+}
+@media (max-width: 321px) {
+    .footer li{
+        margin:0 1.355rem 0;
+    }
+}
+@media (min-width: 1000px) {
+    .footer li{
+        margin:0 2.255rem 0;
     }
 }
 .footer li a{
@@ -91,7 +100,7 @@
 }
 
 .menu_con li{
-	width:25%;
+	width:2.8rem;
 	height: 3rem;
 	margin-left: 1.5rem;
 	margin-top: 1rem;
