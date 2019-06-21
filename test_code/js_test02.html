@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/">
+	<script type="text/javascript" >
+		/*alert (iNum01);*/
+		/*var iNum01 = 12;*/
+		function fnMyAlert2(a){
+			alert(a);
+		}
+		function fnChangeStyle(obj, mystyle, val){
+			obj.style[mystyle] = val;
+		}
+		/*fnMyAlert2(iNum01);*/
+		
+		window.onload = function() {
+
+			var oDiv = document.getElementById("div1");
+			var oBtn = document.getElementById("btn01");
+			oDiv.onclick = fnMyalert;
+			//行间调用时需要加上小括号,使用函数关联,则不需要写小括号
+			//oBtn.onclick = fnChange();
+			oBtn.onclick = function () {
+				var oDiv = document.getElementById("div1");
+				/*oDiv.style.color = "red";*/
+				fnChangeStyle(oDiv, "color", "red")
+				oDiv.style.fontSize = "30px";
+			};
+			
+			var oResBtn = document.getElementById("result");
+			var Num01 = document.getElementById("input1");
+			var Num02 = document.getElementById("input2");
+			
+			oResBtn.onclick = function(){
+				var iValue01 = parseInt(Num01.value);
+				var iValue02 = parseInt(Num02.value);
+				
+				alert(iValue01+iValue02);
+				
+				};
+		}
+		function fnMyalert()
+		{
+			alert("HelloWorld");
+		}
+		/*fnMyalert();*/
+		/*function fnChange(){
+			var oDiv = document.getElementById("div1");
+			oDiv.style.color = "red";
+			oDiv.style.fontSize = "30px";
+
+		}*/
+
+	</script>
+	<style type="text/css">
+		#div1{
+			width:300px;
+			height:300px;
+			border:1px solid red;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div id="div1">
+		这是一个div元素
+	</div>
+	<input type="button" name="" value="改变div" id = "btn01">
+	<input type="text" id="input1">
+	<span>+</span>
+	<input type="text" id="input2">
+	<input type="button" value="=" id="result">
+	<input type="text" id="res">
+</body>
+</html>

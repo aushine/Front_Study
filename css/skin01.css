@@ -1,0 +1,10 @@
+body{
+	background: gray;
+}
+input{
+	width:300px;
+	height:40px;
+	background-color: gold;
+	border:0;
+	cursor:pointer;
+}
