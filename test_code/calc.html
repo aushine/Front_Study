@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .calc tr:nth-child(2) td input{
+            /*background-color: cyan;*/
+        }
+        input{
+            width:100%;
+        }
+        .add,.equal{
+            height:51px;
+        }
+    </style>
+    <script type="text/javascript">
+         window.onload = function () {
+            var mul = document.getElementById("*");
+            var div = document.getElementById("/");
+            var sub = document.getElementById("-");
+            var add = document.getElementById("+");
+            var equal = document.getElementById("=");
+            var edit = document.getElementById("edit");
+            var num0 = document.getElementById("0");
+            var num1 = document.getElementById("1");
+            var num2 = document.getElementById("2");
+            var num3 = document.getElementById("3");
+            var num4 = document.getElementById("4");
+            var num5 = document.getElementById("5");
+            var num6 = document.getElementById("6");
+            var num7 = document.getElementById("7");
+            var num8 = document.getElementById("8");
+            var num9 = document.getElementById("9");
+            var del = document.getElementById("del");
+            del.onclick = function(){
+              edit.value="";
+            };
+             num0.onclick = function(){
+                 edit.value+=0;
+             };
+             num1.onclick = function(){
+                 edit.value+=1;
+             };
+             num2.onclick = function(){
+                 edit.value+=2;
+             };
+             num3.onclick = function(){
+                 edit.value+=3;
+             };
+             num4.onclick = function(){
+                 edit.value+=4;
+             };
+             num5.onclick = function(){
+                 edit.value+=5;
+             };
+             num6.onclick = function(){
+                 edit.value+=6;
+             };
+            num7.onclick = function(){
+                edit.value+=7;
+            };
+             num8.onclick = function(){
+                 edit.value+=8;
+             };
+             num9.onclick = function(){
+                 edit.value+=9;
+             };
+             var op = null;
+             var iNum1 = null;
+             var iNum2 = null;
+             add.onclick = function(){
+                 iNum1 = edit.value;
+                 edit.value='';
+                 op = "add";
+             };
+             sub.onclick = function(){
+                 iNum1 = edit.value;
+                 edit.value='';
+                 op = "sub";
+             };
+             div.onclick = function(){
+                 iNum1 = edit.value;
+                 edit.value='';
+                 op = "div";
+             };
+             mul.onclick = function(){
+                 iNum1 = edit.value;
+                 edit.value='';
+                 op = "mul";
+             };
+            equal.onclick = function () {
+                iNum2 = edit.value;
+                /*alert(iNum1+op+iNum2);*/
+                if(op === "add"){
+                    edit.value=parseInt(iNum1)+parseInt(iNum2);
+                }
+                if(op === "sub"){
+                    edit.value=parseInt(iNum1)-parseInt(iNum2);
+                }
+                if(op === "mul"){
+                    edit.value=parseInt(iNum1)*parseInt(iNum2);
+                }
+                if(op === "div"){
+                    edit.value=parseInt(iNum1)/parseInt(iNum2);
+                }
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <table class="calc" id="calc">
+        <tr>
+            <td colspan="4">
+            <input type="text" id="edit">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="AC" id = 'del' style="color:red;"></td>
+            <td><input type="button" value="/" id="/"></td>
+            <td><input type="button" value="*" id="*"></td>
+            <td><input type="button" value="-" id="-"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" id="7"></td>
+            <td><input type="button" value="8" id="8"></td>
+            <td><input type="button" value="9" id="9"></td>
+            <td rowspan="2"><input type="button" value="+"  id="+" class="add"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" id="4"></td>
+            <td><input type="button" value="5" id="5"></td>
+            <td><input type="button" value="6" id="6"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" id="1"></td>
+            <td><input type="button" value="2" id="2"></td>
+            <td><input type="button" value="3" id="3"></td>
+            <td rowspan="2"><input type="button" value="=" id="=" class="equal"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="0" id="0"></td>
+            <td><input type="button" value="." id="."></td>
+        </tr>
+    </table>
+</body>
+</html>
