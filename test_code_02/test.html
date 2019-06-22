@@ -1,1 +1,67 @@
-test.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.div1{
+			margin:100px auto;
+			text-align: center;
+			font-size: 60px;
+			color:red;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById("div1");
+			var SFuture = new Date(2019, 6, 2, 24, 0, 0);
+
+			function count_Down(){
+			var sNow = new Date();
+			
+			// 两个时间戳进行相减得出的是毫秒数,除以1000得出秒数
+			var sLeft = parseInt((SFuture-sNow)/1000);
+
+			// 一天的时间是86400秒,得出有几个86400就能得出还有几天
+			var idays = parseInt(sLeft/86400);
+
+			// 剩余的秒数减去天数乘以一天的秒数就是还剩下的不够一天的时间
+			sLeft -= idays*86400;
+			// console.log("刨去天数的秒数"+sLeft);
+
+			// 一小时有三千六百秒, 取出剩余秒数的整小时数
+			var iHours = parseInt(sLeft/3600);
+
+			//剩余的秒数减去剩余小时数乘以3600秒还剩下不足一小时的时间
+			sLeft -= iHours *3600;
+
+			//一分钟有60秒,剩余秒数除以60就可以取出够分钟的秒数
+			var iMinute = parseInt(sLeft/60);
+			// console.log("刨去天数和小时的分钟数"+iMinute);
+
+			//取完分钟后剩下的就是秒数
+			sLeft -= iMinute*60;
+
+			sTr = "剩余时间还有"+setDou(idays)+"天"+setDou(iHours)+"小时"+setDou(iMinute)+"分"+setDou(sLeft)+"秒";
+			oDiv.innerHTML = sTr;
+			}
+		count_Down();
+		setInterval(count_Down, 1000);
+
+		}
+		function setDou(num){
+			if(num < 10){
+				return "0"+num;
+			}
+			else{
+				return num;
+			}
+		}
+
+	</script>
+
+</head>
+<body>
+	<div id="div1" class="div1"></div>
+</body>
+</html>
