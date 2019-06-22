@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			margin:0;
+			padding:0;
+			background:wheat;
+			text-align: center;
+		}
+		.navi{
+			width:960px;
+			height:100px;
+			background:darkred;
+			color:white;
+			font-size: 40px;
+			text-align: center;
+			position:fixed;
+			left:50%;
+			margin-left: -480px;
+			top:-20px;
+			border-radius: 20px;
+			z-index: 999;
+		}
+		.pop_up_con{
+			background-color: rgba(66,66,66,0.7);
+			position:fixed;
+			left:0;
+			right:0;
+			bottom:0;
+			top:0;
+			display: none;
+		}
+		.pop_up{
+			width:600px;
+			height:300px;
+			background:white;
+			position:absolute;
+			left:50%;
+			top:50%;
+			margin-left: -300px;
+			margin-top:-150px;
+		}
+		.pop_up p:nth-child(1){
+			height:50px;
+			color:white;
+			background-color: darkred;
+			font-size: 24px;
+		}
+		.pop_up p:nth-child(2){
+			text-align: center;
+			font-size: 35px;
+		}
+		.pop_up p span{
+			color:red;
+		}
+		.btn1{
+			width:100px;
+			height:40px;
+			font-size: 24px;
+		}
+
+	</style>
+	<script type="text/javascript">	
+			window.onload = function(){
+				var oDiv_con = document.getElementById("pop_up_con");
+				var oPop_up = document.getElementById("pop_up");
+				var btn1 = document.getElementById("btn1");
+				var iTime = document.getElementById("time");
+				// 设置一个按钮,按钮的单击事件打开弹框,弹框计时过5秒自动关闭,并且在弹框上显示倒计时
+				var time = 5;
+				// 设置一个定时器,每次过1s执行一次将time变量-1并且把弹框的id为time的文字修改为time
+				btn1.onclick = function(){
+					time = 5;
+					// 单击按钮就把弹框的display设置为block
+					oDiv_con.style.display = "block";
+					// time变量减少变为0的时候就把弹框的display设置为none
+					var Mytimer = setInterval(function(){
+					
+					time-=1
+					iTime.innerHTML = time;
+					console.log(time);
+					
+					if(time==0){
+					//time 的值减少到0时,把time标签的值修改回5并且把弹框隐藏,关闭定时器;
+					iTime.innerHTML = 5;
+					oDiv_con.style.display = "none";
+					clearInterval(Mytimer);
+					}
+						}, 1000);
+
+					
+					
+					}
+
+
+
+			}
+	</script>
+</head>
+<body>
+	<div class="navi"><p>标题栏</p></div>
+	<div class="pop_up_con" id="pop_up_con">
+		<div class="pop_up" id="pop_up">
+			<p>这是一个弹框</p>
+			<p>还有<span><u id=time>5</u></span>秒关闭弹框</p>
+		</div>
+	</div>
+	<p>网页文字</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>网页文字</p>
+	<input type="button" value="弹框" id="btn1" class="btn1">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>网页文字</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>网页文字</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>网页文字</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p>网页文字</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+</body>
+</html>

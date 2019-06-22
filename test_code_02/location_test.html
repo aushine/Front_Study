@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload = function(){
+			// 获取上级页面的url
+			var sUrl = document.referrer;
+			
+			var oBtn = document.getElementById("btn");
+			oBtn.onclick = function(){
+				window.location.href= "https://www.bilibili.com";
+			
+
+			}
+		var iPi =  Math.PI;
+		/*alert(iPi);*/
+
+		var aRr = Array();
+
+		for (var i=0;i<20;i++){
+			//返回的是0-1之间的随机数
+			var iNum = Math.random();
+			aRr.push(iNum);
+		}
+		/*alert(aRr);*/
+		console.log(aRr);
+		}
+
+		//生成10 - 20的随机数
+		var iN01 = 10;
+		var iN02 = 20;
+		var iNums = Array();
+		for(var i=0; i<40; i++){
+			iNums.push(Math.floor((iN02-iN01+1)*Math.random())+iN01);
+		}
+		console.log(iNums);
+	</script>
+</head>
+<body>
+	<input type="button" name="" value="跳转" id="btn">
+</body>
+</html>
