@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .slide_con{
+            margin: 100px auto;
+            border:3px solid darkred;
+            width:950px;
+            height:190px;
+            background-color: #666666;
+            position:relative;
+            overflow:hidden;
+        }
+        .slide_con ul{
+            width:1877px;
+            height:150px;
+            padding:0;
+            list-style: none;
+            position:absolute;
+            left:8px;
+        }
+        .slide_con ul li{
+            margin-right: 7px;
+            float:left;
+            background-color: gray;
+        }
+        .slide_con ul li img{
+            width:150px;
+            height:150px;
+        }
+
+        .slide_con ul li:last-child{
+            margin-right: 0;
+        }
+        .left_btn{
+            background:pink;
+            text-align: center;
+            width:21px;
+            font-size: 30px;
+            position: absolute;
+            left:180px;
+            border-radius: 5px;
+            color:white;
+            top:179px;
+            cursor:pointer;
+        }
+        .right_btn{
+            background:pink;
+            text-align: center;
+            width:21px;
+            font-size: 30px;
+            position: absolute;
+            right:180px;
+            border-radius: 5px;
+            color:white;
+            top:179px;
+            cursor:pointer;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function(){
+            var oDiv = document.getElementById("slide");
+            var oUl = oDiv.getElementsByTagName("ul")[0];
+            var oLeft_Btn = document.getElementById("left_btn");
+            var oRight_Btn = document.getElementById("right_btn");
+            /*alert(oUl.innerHTML);*/
+            oUl.innerHTML += oUl.innerHTML;
+            /*var iLeft = oUl.style.left;*/
+            /*console.log(oUl.innerHTML);*/
+            var iLeft = 0;
+            var iSpeed = -3;
+            var iNowSpeed = 0;
+            var myTimer = setInterval(moving, 30);
+            function moving(){
+                iLeft += iSpeed;
+                if(iLeft < -935){
+                    iLeft = 8;
+                }
+                if(iLeft >8){
+                    iLeft = - 935;
+                }
+                oUl.style.left = iLeft + "px";
+            }
+            oLeft_Btn.onclick = function(){
+                iSpeed = -3;
+            };
+            oRight_Btn.onclick = function(){
+                iSpeed = 3;
+            };
+            oDiv.onmouseover = function(){
+               iNowSpeed = iSpeed;
+               iSpeed = 0;
+            };
+            oDiv.onmouseout = function(){
+              iSpeed = iNowSpeed;
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div class="left_btn" id="left_btn">&lt;</div>
+    <div class="right_btn" id="right_btn">&gt;</div>
+<div class="slide_con" id="slide">
+    <ul>
+        <li><a href="#"><img src="../images/1.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/11.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/21.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/31.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/44.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/53.png" alt=""></a></li>
+    </ul>
+</div>
+</body>
+</html>

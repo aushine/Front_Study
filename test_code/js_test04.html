@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var aList1 = ["a", "b", "c", "d"];
+        console.log(aList1.join("-"));
+        var sStr1 = "abcdef";
+        var aList2 = sStr1.split("");
+        var aList3 = Array.from(aList2);
+        console.log(aList3);
+        for(i in aList2){
+            console.log(aList2[i]);
+        }
+
+        var aList4 = Array(1, 2, 3, 4, 5, 6, 5, 6, 4, 2, 3, 1);
+        var aList5 = Array();
+        console.log("原列表:"+aList4);
+        var iList1Length = aList4.length;
+        for(var i = 0; i < iList1Length; i++){
+            if(aList5.indexOf(aList4[i]) !== -1){
+                continue;
+            }
+            aList5.push(aList4[i]);
+        }
+        console.log("去重后的列表"+aList5);
+
+        //通过标签获取元素的li
+        window.onload = function(){
+            var aLi = document.getElementsByTagName('li');
+            /*console.log("li的个数有:"+aLi.length);*/
+            var oUl = document.getElementById("list1");
+            var aLi2 = oUl.getElementsByTagName("li");
+            /*alert(aLi2.length);*/
+
+            var iNum01 = 12;
+            var iNum02 = "24";
+            var sTr = "abc";
+
+            console.log(iNum01 + iNum02);
+            console.log(iNum01 + 1);
+            var sTr02 = "#div";
+
+            var sTr05 = sTr02.charAt(0);
+            console.log(sTr05);
+        }
+    </script>
+</head>
+<body>
+<ul id="list1">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<ul id="list2">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+</body>
+</html>

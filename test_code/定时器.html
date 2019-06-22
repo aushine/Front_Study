@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function myAlert(){
+            alert("HelloWorld");
+        }
+        //只执行一次的定时器;
+        var timer01 = setTimeout(myAlert, 1000);
+
+        //关闭只执行一次的定时器;
+        clearTimeout(timer01);
+
+        var timer02 = setInterval(myAlert, 500);
+
+        clearInterval(timer02);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
