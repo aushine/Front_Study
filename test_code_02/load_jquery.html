@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementById("div1");
+			/*alert("使用原生js弹出:"+oDiv);*/
+		};
+
+		/*
+		// ready 的完整写法
+		$(document).ready(function(){
+			var $div = $("#div1");
+			alert("使用jquery弹出"+$div);
+		});
+		*/
+		// ready 的简写方法
+		$(function(){
+			var $div = $("#div1");
+
+			$div.css({"color": "red"});
+			
+			var $div2 = $(".box");
+
+			$div2.css({"backgroundColor": "gray"});
+
+			var $li = $(".list li");
+
+			$li.css({"backgroundColor": "pink"});
+			// alert("使用jquery弹出"+$div);
+
+
+		});
+
+	</script>
+
+</head>
+<body>
+	<div id="div1">这是一个div元素</div>
+	
+	<div class="box">这是第二个div元素</div>
+	<div class="box">这是第三个div元素</div>
+	
+	<ul class="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+		<li>5</li>
+		<li>6</li>
+		<li>7</li>
+		<li>8</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+           var $div = $("#div1");
+
+           // 读属性值
+           var sTr = $div.css("fontSize");
+           console.log(sTr);
+
+           // 写属性值
+           $div.css({"backgroundColor": "pink", "width":"200px", "height":"300px", "border": "1px solid red"});
+
+           // 给一个元素添加class属性参数
+           $div.addClass("big");
+
+           // 删除一个元素的class属性参数
+           $div.removeClass("red");
+
+           // 绑定click事件
+           $("#btn").click(function () {
+                $(".box2").toggleClass("col01");
+           });
+
+           var $tab_control = $("#tab_control div");
+           var $tab_content = $("#tab_content div");
+           /*console.log($tab_control, $tab_content)*/
+           $tab_control.click(function () {
+               $(this).addClass("checked").siblings().removeClass("checked");
+               $tab_content.eq($tab_control.index( $(this) )).addClass("active").siblings().removeClass("active");
+           });
+        });
+
+    </script>
+    <style type="text/css">
+        .big{
+            font-size: 50px;
+        }
+        .red{
+            color: red;
+        }
+        .box2{
+            width:200px;
+            height:200px;
+            background-color: #37ab40;
+        }
+        .col01{
+            background-color: cyan;
+        }
+        .tab_control{
+            width: 310px;
+        }
+        .tab_control div{
+            display:inline-block;
+            width:100px;
+            height:45px;
+            background-color: gray;
+            color:white;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 15px;
+            cursor:pointer;
+        }
+        .tab_control .checked{
+            background-color: #66ccff;
+        }
+        .tab_content{
+            position:relative;
+        }
+        .tab_content div{
+            z-index: 999;
+            width:600px;
+            height:600px;
+            margin-top: -15px;
+            background-color: #66ccff;
+            font-size: 50px;
+            color:white;
+            text-align: center;
+            line-height: 600px;
+            display:none;
+        }
+        .tab_content .active{
+            display:block;
+        }
+        .box4{
+            width:700px;
+            height:700px;
+            border:2px solid red;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" class="red">这是一个div元素</div>
+    <input type="button" id="btn" value="切换样式">
+    <div class="box2">这是第二个div元素</div>
+
+    <ul class="list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+<div class="box4">
+    <div class="tab_control" id="tab_control">
+        <div class="checked">选项卡1</div>
+        <div>选项卡2</div>
+        <div>选项卡3</div>
+    </div>
+    <div class="tab_content" id="tab_content">
+        <div class="active">选项卡1的内容</div>
+        <div>选项卡2的内容</div>
+        <div>选项卡3的内容</div>
+    </div>
+</div>
+</body>
+</html>

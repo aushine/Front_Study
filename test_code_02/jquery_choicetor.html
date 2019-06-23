@@ -3,14 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script type="text/javascript" src="../../JqueryLib/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
     <script type="text/javascript">
         $(function () {
-           alert("Here!!!")
+            // 选中所有包含p标签的div标签元素
+            $("div").has("p").css({"backgroundColor": "red", "fontSize": "40px"});
+            $("div p").css({"backgroundColor": "pink", "fontSize": "30px"});
+
+            // 从选择集中选中第二个元素
+            $("ul li").eq(2).css({"backgroundColor": "gray"});
+
+            /*$("ul li").has("p").css({"fontSize": "40px"});*/
+            // 从选择集中过滤掉不包含span 标签的元素,返回的结果是有div中含有span标签的p 标签元素
+            $("div p").has("span").css({"backgroundColor":"green"});
+
+            // 从选择集中过滤掉类为test1的元素,返回的结果集是不包括类为test1的其他元素
+            $("ul li").not(".test1").css({"fontSize": "50px"});
+
+            // 从选择集中选中类为 test1 的元素
+            $("ul li").filter(".test1").css({"fontSize": "70px"});
+
+            // 选择选中元素的前一个元素
+            $("ul li").filter(".test1").prev().css({"backgroundColor": "darkred"});
+
+            // 选择选中元素的父级元素
+            $("ul li").filter(".test1").parent().css({"border":"3px solid red"});
+
+            // 选择选中元素的子元素中class属性是test1 的元素
+            $("ul").find(".test1").css({"border": "2px dotted blue"});
         });
     </script>
+    <style type="text/css">
+        .box1{
+            width:200px;
+            height:200px;
+            border:2px solid red;
+        }
+        .p1{
+            width:200px;
+            height:200px;
+            border:2px solid black;
+        }
+    </style>
 </head>
 <body>
-
+<div>这是第一个div元素</div>
+<div>
+    这是第二个div元素
+    <p>这是一个div元素中的p标签</p>
+    <p><span>这是一个div中的p标签里的p标签</span></p>
+</div>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li class="test1">3</li>
+    <li>4</li>
+    <li><p>5</p></li>
+</ul>
+<!--p标签里不能放块元素,如果放了块元素,内容物会在容器(p)的外部-->
+<p class="p1"><div class="box1"></div></p>
 </body>
 </html>
