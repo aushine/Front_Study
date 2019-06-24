@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <style type="text/css">
+        body{
+            font-size: 0;
+        }
+        .btn1,.btn2,.btn3{
+            width:100px;
+        }
+        .box1, .box2, .box3{
+            width:100px;
+            height:200px;
+            background-color: cyan;
+            font-size: 24px;
+            text-align: center;
+        }
+        #boxes div{
+            width:100px;
+            height:200px;
+            float:left;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+           var $btns = $("#btns input");
+           var $divs = $("#boxes div div");
+           /*console.log($btns);*/
+            /*console.log($divs);*/
+            $btns.click(function () {
+                /*console.log($btns.index( $(this) ));*/
+                if($btns.index( $(this) ) === 0){
+                    $divs.eq($btns.index( $(this) )).fadeToggle(1000, "swing");
+                }
+                else if($btns.index( $(this) ) === 1){
+                    $divs.eq($btns.index( $(this) )).toggle();
+                }
+                else{
+                    $divs.eq($btns.index( $(this) )).stop().slideToggle();
+                }
+
+                /*$divs.eq($btns.index( $(this) )).fadeIn();*/
+            });
+        });
+    </script>
+</head>
+<body>
+<div id="btns">
+<input type="button" class="btn1" id="btn1" value="淡入淡出"><input type="button" class="btn2" id="btn2" value="显示隐藏"><input type="button" class="btn3" id="btn3" value="卷起展开">
+</div>
+<br />
+<div id="boxes">
+    <div><div class="box1">这是第一个div</div></div>
+    <div><div class="box2">这是第二个div</div></div>
+    <div><div class="box3">这是第三个div</div></div>
+</div>
+</body>
+</html>

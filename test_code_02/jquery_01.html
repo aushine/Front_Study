@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="../css/reset.css">
+<script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+
+<style type="text/css">
+    ul{
+        list-style: none;
+        padding:0;
+        margin:0;
+    }
+    a{
+        text-decoration: none;
+    }
+    .box_con a, .box_con2 a, .box_con3 a{
+        display:block;
+        width: 200px;
+        height: 40px;
+        background-color: #666666;
+        border:1px solid deeppink;
+        line-height: 40px;
+        text-align: center;
+    }
+    .box_con ul, .box_con2 ul, .box_con3 ul{
+        display:none;
+    }
+
+    .box_con ul li, .box_con2 ul li, .box_con3 ul li{
+        width: 200px;
+        height: 40px;
+        background-color: gray;
+        text-align: center;
+        border:1px solid hotpink;
+        color:wheat;
+    }
+</style>
+<script type="text/javascript">
+    $(function () {
+        var $div = $("div");
+        var $aBtn = $("div a");
+        // console.log($div, $aBtn);
+        $aBtn.click(function () {
+           // 将按下的标签对应的父级块的ul展开,并将其他和父级同辈的子辈ul上拉
+            $( this ).next().stop().slideToggle().parent().siblings().children("ul").slideUp();
+        });
+    });
+</script>
+<body>
+<div class="box_con checked">
+    <a href="#" id="check1">水果</a>
+    <ul>
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+    </ul>
+</div>
+<div class="box_con2">
+    <a href="#" id="check2">水果</a>
+    <ul>
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+    </ul>
+</div>
+<div class="box_con3">
+    <a href="#" id="check3">水果</a>
+    <ul>
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+        <li>苹果</li>
+    </ul>
+</div>
+</body>
+</html>
