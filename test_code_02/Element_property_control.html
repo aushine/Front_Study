@@ -7,7 +7,9 @@
     <script type="text/javascript" >
         $(function () {
            var $link1 = $("#link1");
-
+           var $img = $("#img01");
+           console.log($img.prop("src"));
+            console.log(document.getElementById("test").id);
            // 获取到属性值
            console.log( $link1.prop("class") );
 
@@ -20,5 +22,7 @@
 </head>
 <body>
 <a href="#" id="link1" class="link1">这是一个a标签</a>
+<div id="test"></div>
+<img src="../images/31.png" alt="sakura" id="img01">
 </body>
 </html>

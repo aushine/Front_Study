@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <style type="text/css">
+        .accordion{
+            width:721px;
+            height:1000px;
+            position:relative;
+            overflow:hidden;
+        }
+        .img_con{
+            width:4326px;
+            height:1000px;
+            list-style: none;
+        }
+        .img_con li{
+            float:left;
+            width:721px;
+            height: 1000px;
+            position:absolute;
+            left:0;
+        }
+        .img_con li:nth-child(2){
+            left:21px;
+
+        }
+        .img_con li:nth-child(3){
+            left:42px;
+
+        }
+        .img_con li:nth-child(4){
+            left:63px;
+
+        }
+        .img_con li:nth-child(5){
+            left:679px;
+
+        }
+        .img_con li:nth-child(6){
+            left:700px;
+
+        }
+
+        .img_con li img{
+            width:700px;
+            height:900px;
+        }
+        .img_con li span{
+            cursor:pointer;
+            text-align: center;
+            color:white;
+            float:left;
+            width:21px;
+            height:900px;
+            background-color: #99ccff;
+        }
+        .img_con li:nth-child(2) span{
+            background-color: #66ccff;
+
+        }
+        .img_con li:nth-child(3) span{
+            background-color: #6699cc;
+        }
+        .img_con li:nth-child(4) span{
+            background-color: #3399cc;
+        }
+        .img_con li:nth-child(5) span{
+            background-color: #336699;
+
+        }
+        .img_con li:nth-child(6) span{
+            background-color: #003366;
+
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+           /*
+           * 点击一个span标签时把在被点击的span所在右边的所有li的left值推到右边(index*21)
+           * 被点击的span标签所在的li标签的左边标签推到左边,右边所有的left值等于(700-21*(5-index))
+           */
+           var $li = $("#img_con li");
+           $li.click(function () {
+              console.log( $li.index( $(this) ) );
+              /*$( this ).css("left", $li.index($( this ))*21+"px");*/
+              $( this ).animate({"left" : $li.index($( this ))*21});
+
+              $( this ).prevAll().each(function () {
+                  $( this ).animate({"left" : $li.index($( this ))*21});
+              });
+
+              $( this ).nextAll().each(function () {
+                  $( this ).animate({"left" : 700 - (5 - $li.index($( this )))*21});
+              }) ;
+
+           });
+        });
+    </script>
+</head>
+<body>
+<div class="accordion" id="accordion">
+    <ul class="img_con" id="img_con">
+        <li><span>画师g<br>u<br>w<br>e<br>i<br>z作品1</span><img src="../images/guweiz_1.jpg" alt=""></li>
+        <li><span>画师g<br>u<br>w<br>e<br>i<br>z作品2</span><img src="../images/guweiz_2.jpg" alt=""></li>
+        <li><span>画师g<br>u<br>w<br>e<br>i<br>z作品3</span><img src="../images/guweiz_3.jpg" alt=""></li>
+        <li><span>画师g<br>u<br>w<br>e<br>i<br>z作品4</span><img src="../images/guweiz_4.jpg" alt=""></li>
+        <li><span>画师g<br>u<br>w<br>e<br>i<br>z作品5</span><img src="../images/guweiz_5.jpg" alt=""></li>
+        <li><span>画师g<br>u<br>w<br>e<br>i<br>z作品6</span><img src="../images/guweiz_6.jpg" alt=""></li>
+    </ul>
+</div>
+</body>
+</html>
