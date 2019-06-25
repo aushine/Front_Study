@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <style type="text/css">
+        .add_chart{
+            width: 100px;
+            height: 30px;
+            background-color: #66ccff;
+            text-align: center;
+            color:white;
+            cursor:pointer;
+            line-height: 30px;
+            position:fixed;
+            left:50%;
+            top:60%;
+        }
+        .chart{
+            width:80px;
+            height:30px;
+            background-color: #66ccff;
+            color:white;
+            cursor:pointer;
+            text-align: center;
+            line-height: 30px;
+            position:fixed;
+            right:40px;
+
+        }
+        .chart u{
+            color:red;
+        }
+        .point{
+            width:10px;
+            height:10px;
+            border-radius: 50%;
+            background-color: red;
+            display:none;
+            position:absolute;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+           var $addChart = $("#add_chart");
+           var $chart = $("#chart");
+           var $point = $("#point");
+           var $num = $("#chart u");
+           /*
+           * 点击加入购物车时把红点定位到加入购物车的位置并把display属性设置为block
+           * 取消隐藏后移动到购物车的位置(动画)
+           * 移动到购物车的位置后再设置隐藏并且把display设置为none
+           * 红点移动到购物车小时后购物车的数字+1
+           * */
+           $addChart.click(function () {
+              /*console.log($addChart.offset().left);*/
+               var flag = true;
+               var oPos = $addChart.offset();
+               var chart_pos = $chart.offset();
+               $point.css({"left": oPos.left+70, "top": oPos.top+10, "display": "block"});
+               $point.animate({"left": chart_pos.left+59, "top": chart_pos.top+10}, function () {
+                   $point.hide();
+                   /*console.log($num.html());*/
+
+                   $num.html(parseInt($num.html())+1);
+               });
+
+               /*$point.fadeIn();*/
+
+           });
+        });
+
+    </script>
+</head>
+<body onselectstart="return false;">
+<div class="add_chart" id="add_chart">加入购物车</div>
+<div class="chart" id="chart">购物车<u>0</u></div>
+<div class="point" id="point"></div>
+</body>
+</html>

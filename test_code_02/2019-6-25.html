@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+<style type="text/css">
+    *{
+        padding:0;
+        margin:0;
+        text-align: center;
+    }
+    .banner{
+        height: 300px;
+        background-color: #666666;
+    }
+    .header{
+        width:960px;
+        height: 75px;
+        background-color: #66ccff;
+        margin:0 auto;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+        font-size: 50px;
+        color:white;
+
+    }
+    .header_back{
+        width:960px;
+        height: 75px;
+        margin:0 auto;
+        display:none;
+
+    }
+    .totop{
+        width:50px;
+        height:50px;
+        background-color: gray;
+        color:white;
+        position:fixed;
+        right:20px;
+        bottom:40px;
+        font-size: 50px;
+        border-radius: 50%;
+        cursor:pointer;
+        overflow: hidden;
+        display:none;
+    }
+</style>
+<script type="text/javascript">
+    $(function () {
+       var $header = $("#header");
+       var $header_back = $("#header_back");
+       var $totop = $("#toTop");
+       console.log("可视区域的宽度" + $(window).width());
+
+       console.log("可视区域的高度" + $(window).height());
+
+       console.log("文档的宽度" + $(document).width());
+
+       console.log("文档的高度" + $(document).height());
+
+       $(window).scroll(function () {
+           $iSrollVal = $(document).scrollTop();
+           // document.title = $iSrollVal;
+           if($iSrollVal > 300){
+                $header.css({
+                    "position": "fixed",
+                    "left": "50%",
+                    "top": "0",
+                    "margin-left":"-480px"
+                });
+               $header_back.show();
+               $totop.show();
+           }else{
+                $header.css({
+                    "position": "static",
+                    "margin-left":"auto"
+                });
+               $header_back.hide();
+               $totop.hide();
+           }
+       });
+       $totop.click(function () {
+           $("html, body").animate({"scrollTop": "0"});
+       })
+    });
+
+</script>
+<body>
+<div class="banner" id="banner"></div>
+<div class="header" id="header">这是标题栏</div>
+<div class="header_back" id="header_back"></div>
+<div class="totop" id="toTop">↑</div>
+<p>网页文字1<br><br><br><br><br><br><br><br><br><br></p>
+<p>网页文字<br><br><br><br><br><br><br><br><br><br></p>
+<p>网页文字<br><br><br><br><br><br><br><br><br><br></p>
+<p>网页文字<br><br><br><br><br><br><br><br><br><br></p>
+<p>网页文字<br><br><br><br><br><br><br><br><br><br></p>
+<p>网页文字<br><br><br><br><br><br><br><br><br><br></p>
+<p>网页文字<br><br><br><br><br><br><br><br><br><br></p>
+<p>网页文字<br><br><br><br><br><br><br><br><br><br></p>
+<p>网页文字<br><br><br><br><br><br><br><br><br><br></p>
+<p>网页文字<br><br><br><br><br><br><br><br><br><br></p>
+</body>
+</html>

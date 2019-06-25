@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" >
+        $(function () {
+           var $link1 = $("#link1");
+
+           // 获取到属性值
+           console.log( $link1.prop("class") );
+
+           // 设置属性值
+           $link1.prop({"href": "http://www.baidu.com", "title": "立即前往就医莆田系医院"});
+
+
+        });
+    </script>
+</head>
+<body>
+<a href="#" id="link1" class="link1">这是一个a标签</a>
+</body>
+</html>
