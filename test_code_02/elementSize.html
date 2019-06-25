@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $div = $(".div1");
+            console.log($div.length);
+
+            console.log("元素内容物的宽度:"+$div.width());
+            console.log("元素内容无的高度:"+$div.height());
+
+            console.log("元素包含内边距的宽度:"+$div.innerWidth());
+            console.log("元素包含内边距的高度:"+$div.innerHeight());
+
+            console.log("元素包含边框和内边距的宽度:"+$div.outerWidth());
+            console.log("元素包含边框和内边距的高度:"+$div.outerHeight());
+
+            console.log("元素包含边框,内边距和外边距的宽度:"+$div.outerWidth());
+            console.log("元素包含边框,被编剧和外边距的高度:"+$div.outerHeight());
+        });
+
+
+    </script>
+    <style type="text/css">
+        .div1{
+            width:100px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+            border:3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" id="div1"></div>
+</body>
+</html>

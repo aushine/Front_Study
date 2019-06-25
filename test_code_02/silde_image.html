@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+        }
+        .slide_con ul li a img{
+            width:700px;
+            height:1000px;
+        }
+        .slide_con ul a{
+            float:left;
+        }
+        .slide_con .slide{
+            width:4200px;
+            height:1000px;
+            list-style: none;
+            position:absolute;
+            left:0;
+        }
+        .slide_con{
+            width:700px;
+            height:1000px;
+            border:2px solid red;
+            margin:50px auto;
+            overflow:hidden;
+            position:relative;
+        }
+        .leftAndRightBtn div{
+            cursor:pointer;
+            width:30px;
+            height:46px;
+            position:absolute;
+            background:url("../images/icons.png") no-repeat;
+            background-size: 66px 1100px;
+        }
+        .leftAndRightBtn .left_btn{
+            left:0;
+            top:50%;
+            background-position: 0 -900px;
+        }
+        .leftAndRightBtn .right_btn{
+            right:0;
+            top:50%;
+            background-position: 0 -1001px;
+        }
+        .slide_con .points{
+            list-style: none;
+            position:absolute;
+            width:150px;
+            height:15px;
+            bottom:10px;
+            left:50%;
+            margin-left:-75px;
+        }
+        .slide_con .points li{
+            width:15px;
+            height:15px;
+            margin-right: 10px;
+            float:left;
+            border-radius: 50%;
+            background-color: #666;
+        }
+        .slide_con .points .checked{
+            background-color: gray;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var $slide = $(".slide");
+            var $points = $(".points li");
+            var $leftAndRightBtn = $(".leftAndRightBtn div");
+            var $flag = 0;
+            $leftAndRightBtn.click(function test(){
+                // 根据slide的left值除以7 得出的值来决定points的点哪个亮,有六种情况(0, -700, -1400, -2100, -2800, -3500)
+                var $slideNowLeftVal = parseInt($slide.css("left"));
+                /*
+                * 暴力操作(快速连续点击左或者右箭头)会导致动画没有播放完(left值还没变完)就再加或者减少left值,导致了left值不准
+                * 破解方法1: 设置一个Lock值, 执行动画前检测lock值是否为true, 为false时表示有其他动画在事件清单中, 每次执行动画前将lock值锁定(设置为flase)
+                * 破解方法2: 每次点击前把click事件之间关闭, 执行完全部的再开启click事件
+                * */
+                $leftAndRightBtn.off("click");
+                if ($leftAndRightBtn.index( $(this) ) === 0){
+                    // 点击左右箭头,  left+=700, 按下左箭头时如果当前是第一张图(slide的left值为0) 跳到最后一张(left值设置为-3500)
+                        if( $slideNowLeftVal === 0){
+                            $slide.stop().animate({"left": "-3500px"}, 400);
+                        }
+                        else{
+                            $slide.stop().animate({"left":"+=700px"}, 300);
+                            /*console.log($slide.css("left"));*/
+
+                        }
+                }
+                else {
+                    // 点击右箭头, left值-=700, 如果当前是最后一张(slide的left值为-3500) 跳到第一张(left值设置为0)
+                    if ($slideNowLeftVal === -3500) {
+                        /*console.log($slide.css("left"));*/
+                        $slide.animate({"left": "0px"}, 400);
+                    } else {
+                        $slide.animate({"left": "-=700px"}, 300);
+                    }
+                }
+                setTimeout(function () {
+                    $leftAndRightBtn.on("click", test);
+                }, 400);
+            });
+            setInterval(function() {
+                // 此定时器重复执行不断的更新checked点
+                $slideNowLeftVal = parseInt($slide.css("left"));
+
+                // 设置checked点的值的时候,在跳转到第一张图和最后一张图(监测出的left值会是"34XXpx"和"2.XXpx")的时候会出现不能整除的情况
+                // 原因猜测, 在动画播放时(left值还在变换的过程中就执行到了这一条)
+                // 解决方法,第一张图按左方向键跳到最后一张图的时候索引值向上取整,最后一张按右箭头跳到第一张图的时候向下取整
+                var $point_index = $slideNowLeftVal / -700;
+                if ($point_index >1){
+                    $point_index = Math.ceil($point_index);
+                }
+                else{
+                    $point_index = Math.floor($point_index);
+                }
+                $points.eq($point_index).addClass("checked").siblings().removeClass("checked");
+            }, 400);
+
+            setInterval(function () {
+                if($flag > 5){
+                    $flag = 0;
+                }
+                $slide.animate({"left":-700*$flag}, 400);
+                /*console.log(-700*$flag);*/
+                $flag+=1;
+            },1000);
+
+
+        })
+    </script>
+</head>
+<body>
+<div class="slide_con" id="slide_con">
+    <ul class="slide">
+        <li><a href="#"><img src="../images/sakura1.jpg" alt="幻灯片测试图片"></a></li>
+        <li><a href="#"><img src="../images/sakura2.jpg" alt="幻灯片测试图片"></a></li>
+        <li><a href="#"><img src="../images/sakura1.jpg" alt="幻灯片测试图片"></a></li>
+        <li><a href="#"><img src="../images/sakura2.jpg" alt="幻灯片测试图片"></a></li>
+        <li><a href="#"><img src="../images/sakura1.jpg" alt="幻灯片测试图片"></a></li>
+        <li><a href="#"><img src="../images/sakura2.jpg" alt="幻灯片测试图片"></a></li>
+    </ul>
+    <div class="leftAndRightBtn">
+    <div class="left_btn"></div>
+    <div class="right_btn"></div>
+    </div>
+    <ul class="points">
+        <li class="checked"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

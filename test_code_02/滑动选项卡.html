@@ -34,19 +34,29 @@
                 // 选项卡2 的位置在left值-600px 选项卡3 的位置在left值-1200px
                 /*$tab_content.eq($tab_control.index( $(this) )).addClass("active").siblings().removeClass("active");*/
                 var $index_val = $tab_control.index( $(this) );
-                if($index_val === 0){
-                    /*console.log("here!");*/
+                /*if($index_val === 0){
+                    /!*console.log("here!");*!/
                     $tab_content.stop().animate({"left":"0px"});
                 }
                 else if($index_val === 1){
-                    /*console.log("here!!");*/
+                    /!*console.log("here!!");*!/
                     $tab_content.stop().animate({"left":"-600px"});
                 }
                 else{
                     $tab_content.stop().animate({"left":"-1200px"});
-                   /* console.log("here!!!");*/
-                }
+                   /!* console.log("here!!!");*!/
+                }*/
+                $tab_content.stop().animate({"left":-600*$index_val+"px"});
             });
+            var $flag = 0;
+            setInterval(function () {
+                $flag += 1;
+                if($flag ===$tab_control.length){
+                    $flag = 0;
+                }
+                $tab_control.eq($flag).addClass("checked").siblings().removeClass("checked");
+                $tab_content.stop().animate({"left":-600*$flag+"px"});
+            },2000);
         });
 
     </script>
