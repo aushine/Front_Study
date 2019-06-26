@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <style type="text/css">
+        #btn{
+            width:100px;
+            height: 50px;
+            border:0;
+            outline:none;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+           var $div = $( "#div1" );
+
+           // 可以通过html()方法可以将字符串添加进节点中
+           // 使用html()方法会把对象标签的所有内容覆盖
+            $div.html("<a href='#'>链接1</a>");
+            // 可以使用html获取到标签原先的内容然后原先的内容加上后面的内容
+            // 这样就能实现在原先的内容的基础上做添加
+            $div.html($div.html()+"<a href='#'>链接2</a>");
+
+            $a = $( "<a href='#'>链接3</a>" );
+            //append方法在实现的添加方法
+           $div.append($a);
+           /*$a.appendTo( $("<br>") );*/
+           $a2 = "<a>";
+           $div.append($a2);
+           $br =  "<br />";
+           $div.append($br);
+           $div.prepend($br);
+
+
+           $("#btn").bind('click mouseover', function () {
+               alert("you did it");
+               $( this ).unbind("mouseover");
+           })
+        });
+    </script>
+</head>
+<body>
+<input type="button" id="btn" value="点击她">
+<div id="div1" class="div1">
+    <h1>这是一个h1标签</h1>
+</div>
+<ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+</body>
+</html>

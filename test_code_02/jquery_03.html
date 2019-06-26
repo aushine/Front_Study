@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <style type="text/css">
+        .con{
+            width: 400px;
+            height: 400px;
+            background-color: #666;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+        .con2{
+            margin-top: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: #666;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+        .con3{
+            margin-top: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: #666;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: gray;
+        }
+        .list{
+            background-color: #666666;
+            list-style: none;
+        }
+        .list li{
+            height:30px;
+            background-color: gray;
+            margin: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            // 鼠标移入移出时触发事件, 移入移出到子元素也会触发事件
+            //
+            $(".con").mouseover(function () {
+                alert("一号盒子监测到鼠标移入");
+            });
+            $(".con").mouseout(function () {
+                alert("一号监测到鼠标移出");
+            });
+
+
+           // 鼠标移出移出触发事件, 移入移出到子元素不会触发事件
+           $(".con2").mouseenter(function () {
+               alert("二号盒子监测到鼠标移入");
+           });
+           $(".con2").mouseleave(function () {
+               alert("二号盒子监测到鼠标移出");
+           });
+
+
+           // hover事件执行两个函数可以把鼠标的移入和移出合并成一个函数
+           // 使用hover事件设置的移入移出事件监测子元素也不在监测范围
+            $(".con3").hover(function () {
+                alert("三号盒子监测到鼠标移入");
+            },function () {
+                alert("三号盒子监测到鼠标移出");
+            });
+
+
+            /*$(".list li").click(function () {
+               $( this ).css({"backgroundColor": "red"});
+            });*/
+
+
+
+            // click事件的委托写法
+            $(".list").delegate("li", "click", function () {
+                // $( this ) 指的是委托的子元素
+                $( this ).css({"backgroundColor": "red"});
+            })
+            var $li = $("<li>9</li>");
+
+            $(".list").append($li)
+        });
+
+    </script>
+</head>
+<body>
+<div class="con">
+    <div class="box"></div>
+</div>
+<div class="con2">
+    <div class="box2"></div>
+</div>
+<div class="con3">
+    <div class="box3"></div>
+</div>
+<ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
+</body>
+</html>

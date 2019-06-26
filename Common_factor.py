@@ -6,6 +6,7 @@ def gcd(a, b):
 
 
 def main():
+    """算出两个数的比值的函数"""
     a = int(input("输入第一个数:"))
     b = int(input("输入第二个数:"))
     common_factor = gcd(a, b)
