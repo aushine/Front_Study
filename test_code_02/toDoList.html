@@ -63,12 +63,14 @@
             else if(option_code === 1){
                 if(op_obj.index() === 0){
                     alert("到顶了");
+                    return;
                 }
                 op_obj.insertBefore( op_obj.prev() );
             }
             else{
                 if($task.children().length - op_obj.index() === 1){
                     alert("到底了");
+                    return;
                 }
                 op_obj.insertAfter(op_obj.next());
             }
