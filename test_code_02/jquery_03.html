@@ -75,22 +75,19 @@
             },function () {
                 alert("三号盒子监测到鼠标移出");
             });
-
-
             /*$(".list li").click(function () {
                $( this ).css({"backgroundColor": "red"});
             });*/
-
-
-
             // click事件的委托写法
             $(".list").delegate("li", "click", function () {
                 // $( this ) 指的是委托的子元素
                 $( this ).css({"backgroundColor": "red"});
             })
             var $li = $("<li>9</li>");
+            $( "#btn" ).click(function () {
+                $(".list").append($li.clone());
+            });
 
-            $(".list").append($li)
         });
 
     </script>
@@ -115,5 +112,6 @@
     <li>7</li>
     <li>8</li>
 </ul>
+<input type="button" id="btn">
 </body>
 </html>

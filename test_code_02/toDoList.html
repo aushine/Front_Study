@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <style type="text/css">
+        .task{
+            font-size: 25px;
+            border-bottom: 1px dotted gray;
+            overflow:hidden;
+            margin-bottom: 10px;
+        }
+        .input{
+            height:24px;
+            width:75%;
+        }
+        .add{
+            width:50px;
+            height:30px;
+        }
+        .task span{
+            float:left;
+        }
+        .task div{
+            float:right;
+        }
+        .task div span{
+            display:inline-block;
+            margin-left: 20px;
+            color:blue;
+            cursor:pointer;
+        }
+        .task div span:hover{
+            color:red;
+        }
+    </style>
+    <script type="text/javascript">
+    $(function () {
+        var $task = $( "#task_con" );
+        var $btn1 = $("#add_");
+        var $input = $( "#input" );
+        var $option = $( "#task_con div div" );
+        var test;
+        $btn1.click(function () {
+            /*input.value*/
+            $task.append($('<div class="task">\n' +
+                '        <span>'+input.value+'</span>\n' +
+                '        <div><span>删除</span><span>↑</span><span>↓</span></div>\n' +
+                '    </div>'));
+            $input.val("");
+        });
+        $task.delegate("div span","click",function(){
+            /*console.log($task.index($( this ).parent().parent()));*/
+            /*console.log( $(this) );*/
+            // 根据点击元素的索引来做做操作, 0: 删除, 1:上移, 2:下移
+            var option_code =  $(this).index();
+            var op_obj =  $( this ).parent().parent();
+            /*console.log(op_obj);*/
+            if(option_code === 0){
+                op_obj.remove();
+            }
+            else if(option_code === 1){
+                if(op_obj.index() === 0){
+                    alert("到顶了");
+                }
+                op_obj.insertBefore( op_obj.prev() );
+            }
+            else{
+                if($task.children().length - op_obj.index() === 1){
+                    alert("到底了");
+                }
+                op_obj.insertAfter(op_obj.next());
+            }
+        });
+
+    });
+
+    </script>
+</head>
+<body onselectstart="return false">
+    <h2>To do list</h2>
+    <input type="text" class="input" id="input"> <input type="button" value="增加" class="add" id="add_">
+    <div class="task_con" id="task_con">
+    <div class="task">
+        <span>学习html</span>
+        <div><span>删除</span><span>↑</span><span>↓</span></div>
+    </div>
+    <div class="task">
+        <span>学习css</span>
+        <div><span>删除</span><span>↑</span><span>↓</span></div>
+    </div>
+    <div class="task">
+        <span>学习javascript</span>
+        <div><span>删除</span><span>↑</span><span>↓</span></div>
+    </div>
+    </div>
+</body>
+</html>

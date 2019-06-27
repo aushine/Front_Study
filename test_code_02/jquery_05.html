@@ -8,19 +8,36 @@
 <script type="text/javascript">
     $(function () {
        $div1 = $("#div1");
+       // 创建节点, 一个节点插入只能操作一次
        $a = $("<a href='#'>链接</a>");
-       $div1.append( $a );
-        $div1.append( $a );
-        $div1.append( $a );
-        $div1.append( $a );
+       $a2 = $("<a href='#'>链接</a>");
+       $a3 = $("<a href='#'>链接</a>");
+       $a3.insertAfter( $div1 );
+
+       // 在元素的子元素后添加元素
+        // 在节点的后面添加clone()方法把节点的克隆插入到元素中
+       $div1.append( $a.clone() );
+        $div1.append( $a.clone() );
+        $div1.append( $a.clone() );
+        $div1.append( $a.clone() );
+        $div1.append( $a.clone() );
+       ( $("<h1>这是添加的h1标签节点</h1>>") ).appendTo( $div1 );
+
+       // 在元素的子元素前添加元素
        $div1.prepend( $("<a href='#'>链接</a>") );
-       ( $("<h1>这是添加的h1标题</h1>>") ).appendTo( $div1 );
+        ( $("<h2>这是添加的h2标签节点</h2>") ).prependTo( $div1 );
+        $div1.after($a2);
        /*$a.appendTo($div1);*/
+
+        // 节点操作可以针对已有节点进行操作
+        $( "#p1" ).insertBefore( $("#h1") );
     });
 </script>
 <body>
 <div class="div1" id="div1">
     <p>这是一个段落</p>
 </div>
+<h1 id="h1">这是一个h1标题</h1>
+<p id="p1">这是一个P段落</p>
 </body>
 </html>
