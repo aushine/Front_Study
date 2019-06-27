@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/scroll_screen.css">
+</head>
+<script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../jqueryLib/jquery.mousewheel.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var $screen = $( ".pages_con" );
+        var $pages = $(".pages");
+        var $point = $(".point li");
+        var $h = $(window).height();
+        var $page1 = $(".page1");
+        var $dat = 0;
+        var $nowScreen = 0;
+        console.log($page1);
+        $pages.css({"height": $h});
+        $page1.css({"height": $h});
+        $page1.addClass("moving");
+        $(window).mousewheel(function (event, dat) {
+            if(dat === -1){
+                $nowScreen++;
+            }
+            else if(dat === 1){
+                $nowScreen--;
+            }
+            if($nowScreen < 0){
+                $nowScreen = 0;
+            }
+            if($nowScreen > $pages.length){
+                $nowScreen = $pages.length
+            }
+            console.log($nowScreen);
+           /* console.log(dat); */
+            $screen.animate({"top":-($h*$nowScreen-1)});
+            $point.eq($nowScreen).addClass("checked").siblings().removeClass("checked");
+            if($nowScreen===0){
+                $page1.addClass("moving").siblings().removeClass("moving");
+            }else{
+                $pages.eq($nowScreen-1).addClass("moving").siblings().removeClass("moving");
+            }
+
+        });
+        $point.click(function () {
+            /*点第一个点时
+            * 1 -$h
+            * 2 -2$h
+            * 3 -3$h
+            * */
+            var $index_val = $( this ).index();
+            $( this ).addClass("checked").siblings().removeClass("checked");
+            if($index_val === 0){
+                $page1.addClass("moving");
+            }
+            else{
+            $pages.eq($index_val-1).addClass("moving").siblings().removeClass("moving");
+            }
+            $screen.animate({"top": -$h * $index_val});
+        })
+
+    });
+</script>
+<body>
+<div class="pages_con">
+<div class="page1" id="page1">
+    <div class="main_con">
+    <div class="topimg"><img  class="center_img" src="../images/wlop1.jpg" alt=""></div>
+    <p class="bottom_info">
+        《鬼刀》是国内原创绘本漫画，现连载于知名漫画网站有妖气。故事内容很久很久以前，诺拉大陆上，为了表示对诺拉女神最崇高的敬意，虔诚的人类筑起了一座宏伟的高塔。
+        诺拉女神为人们的虔诚所动，便在高塔的顶端打开一扇通往异世的大门---天堂之眼。很快来自异世界的种族——羽族造访了这个世界。羽族的人们很快融入人类社会，他们带来了很多珍贵物料并教会了人类冶炼钢铁、发展农业，甚至教会人类说通用语等等。正是因为这些来自天堂的朋友，人类社会飞速发展，于是人类为这些友善的朋友起了一个美丽的名字——‘‘天使’’
+    </p>
+    </div>
+</div>
+<div class="pages page2">
+    <div class="main_con">
+        <div class="leftimg"><img class="left_img" src="../images/haiqb.jpg" alt=""></div>
+        <p class="right_info">
+            <b style="display:inline-block; font-size: 24px">海琴烟</b><br>
+            年龄：19<br>
+            身高：165cm<br>
+            体重：保密<br>
+            眼睛颜色：深蓝<br>
+            出生地点：在冰块中出生，感觉不到寒冷<br>
+            能力：可以和动物交流<br>
+            从作者微博上看，有一个双胞胎妹妹（萨利娅），会在后面章节中出现。
+            海琴国国王在冰川里捡到的女孩，非常受国王疼爱，但国民认为她是会带来不幸的怪物，因此非常讨厌她。圣堂的人要国王交出她，国王拒绝之后引发了一场战争。心思单纯善良的她离开了自己的国家，不希望再给人们带来任何伤害。
+                </p>
+        <div class="leftimg"><img  class="left_img" src="../images/claw.jpg" alt=""></div>
+        <p class="right_info">
+            <b style="display:inline-block; font-size: 24px">风铃</b><br>
+            北漠公主，前任北王洪都的独生女。自幼从父习武，武艺高强。聪明伶俐又能歌善舞，曾以一曲风蝶之舞名扬天下。
+            在父亲北王洪都的影响之下，风玲自幼就展露出过人的领袖天赋，在北漠极具人气，深得民心。北漠的百姓都称她为“北漠最珍贵的风翡翠”。他们也一致认为，将来风玲会成为北漠的第一个女王。     </p>
+    </div>
+</div>
+<div class="pages page3">
+    <div class="main_con">
+        <div class="leftimg"><img class="left_img" src="../images/tmjm.jpg" alt=""></div>
+        <p class="right_info">
+            <b style="display:inline-block; font-size: 24px">天剑·南风</b><br>
+            来自遥远南方大陆的神秘高人，其独创的南门功可以在数米之外震碎敌人的五脏六腑。居于南山之上，每日饮酒作诗，不问世事。有无数的高手登上南山向其挑战，无不狼狈而归，也有无数人慕名登山求艺 ，最终皆无功而返。
+            他身负一柄巨大石剑，却无人见其使用过，人称‘天剑’。 </p>
+        <div class="leftimg"><img class="left_img" src="../images/xnna.jpg" alt=""></div>
+        <p class="right_info">
+            <b style="display:inline-block; font-size: 24px">小绿</b><br>
+            南风身边的一名剑侍，同时也是南风心爱之人——雨儿的妹妹，现居于南山，武功高强，身世成谜。    </div>
+</div>
+<div class="pages page4">
+    <div class="main_con">
+        <div class="leftimg"><img class="left_img" src="../images/yyna.jpg" alt=""></div>
+        <p class="right_info">
+            <b style="display:inline-block; font-size: 24px">燃焰玫瑰—云娜</b><br>
+            近年来在大陆上声名鹊起的一位刺客，武艺高强且精于用毒，暗杀时神出鬼没，从不失手。
+            传闻中的她是一名拥有着红发赤眼的美貌少女，好事的人们都希望着能一睹其真容，却又唯恐避之不及—就像那种盛放在大陆西岸，美丽却又致命的毒花—燃焰玫瑰   </p>
+    <div class="bottomimg"><img class="top_img" src="../images/jeer.jpg" alt=""></div>
+        <p class="page4_info bottom_info">童年时期是一个孤苦伶仃的小女孩，在一次机缘中被鬼刀救过。后苦练武功成为杀手，希望可以回报鬼刀。
+            性格和冰公主截然相反，有着缜密的思维和更理性的判断，对待敌人手段残忍狠辣，绝不手软。暗杀术强于风铃
+            平时性格比较外向，有些狂妄又出言不逊，其实内心洞察一切，任何时候都不会放松警惕，极善心理战，对机会的把握也是非常娴熟，必要时甚至会自曝弱点来引诱敌人对其放松警惕。</p>
+    </div>
+</div>
+<div class="pages page5">
+    <div class="main_con">
+        <div class="topimg"><img class="top_img" src="../images/gvdc2.png" alt=""></div>
+        <p class="human_info right_info">
+            <b style="display:inline-block; font-size: 24px">鬼刀</b><br>
+            诺拉大陆最恐怖的杀手。曾在黑山 之战中斩杀上将魁七，十万铁甲拖 不住他一步。也曾以一己之力瓦解 了大陆上最大的杀手联盟，当时名震江湖的杀手西凌斯在他手下没能 撑过三招。
+            没人知道他从何方而来，又往何方去，人们说他能召唤死 灵的黑色巨刃，逆天而行。   </p>
+        <div class="leftimg"><img class="left_img" src="../images/gvdc.png" alt=""></div>
+    </div>
+</div>
+</div>
+<ul class="point">
+    <li class="checked"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

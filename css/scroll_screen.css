@@ -1,0 +1,134 @@
+/*body{
+    overflow:hidden;
+}*/
+.page1{background-color: #19CAAD}
+.page2{background-color: #FBFBEA}
+.page3{background-color: #D5F3F4}
+.page4{background-color: #D7FFF0}
+.page5{background-color: #DDF3FF}
+.pages_con{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    overflow:hidden;
+}
+.pages, .page1{
+    height:1030px;
+}
+.pages div, .page1 div{
+    padding:50px;
+}
+img{
+    border-radius: 25px;
+}
+.page1 div img{
+    /*transform:scale(0.25);*/
+    width:1069px;
+    height:625px;
+}
+.pages div img{
+    height:772px;
+    width: 512px;
+}
+
+.pages .main_con p{
+    line-height: 25px;
+    text-align: left;
+    text-indent: 0;
+    margin-top: 120px;
+    width:200px;
+}
+.pages .main_con div, .pages p{
+    display:inline-block;
+    float:left;
+}
+.main_con{
+    width:1720px;
+    text-align: center;
+    margin:0 auto 0;
+}
+.pages p, .page1 p{
+    margin:0 auto;
+    width:1070px;
+    text-indent: 48px;
+    font-size: 20px;
+    text-align: center;
+}
+.page4 .main_con .page4_info{
+    width:800px;
+    margin-top: 0;
+    margin-left: 250px;
+}
+.page4 .main_con .bottomimg img,.page5 .main_con .topimg img{
+    width:800px!important;
+    height: 500px!important;
+}
+.page5 .main_con .topimg{
+    padding:0;
+    margin-top: 50px;
+}
+.page5 .human_info{
+    margin-left: 50px;
+}
+.point{
+    list-style: none;
+    position:fixed;
+    margin-top: -125px;
+    right:20px;
+    top:50%;
+}
+.point li{
+    width:20px;
+    height:20px;
+    margin-bottom: 20px;
+    border:1px solid #666;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.point .checked{
+    background-color: darkgray;
+}
+.left_img, .center_img{
+    transform: translateY(-60px);
+    opacity: 0.1;
+    filter:alpha(opacity=0.1);
+    transition:all 500ms ease 500ms;
+}
+.moving .left_img, .moving .center_img{
+    transform: translateY(0);
+    opacity:1;
+}
+.right_info{
+    transform:translateY(100px);
+    opacity:0.2;
+    filter:alpha(opacity=0.2);
+    transition:all 500ms ease 500ms;
+}
+.moving .right_info{
+    transform:translateY(0);
+    opacity:1;
+    filter:alpha(opacity=1);
+}
+.bottom_info{
+    transform:translateY(60px);
+    opacity:0.2;
+    filter:alpha(opacity=0.2);
+    transition:all 500ms ease 500ms;
+}
+.moving .bottom_info{
+    transform:translateY(-50px);
+    opacity:1;
+    filter:alpha(opacity=1);
+}
+.top_img{
+    transform:translateX(60px);
+    opacity:0.2;
+    filter:alpha(opacity=0.2);
+    transition:all 500ms ease 500ms;
+}
+.moving .top_img{
+    transform:translateX(0);
+    opacity:1;
+    filter:alpha(opacity=1);
+}
