@@ -21,7 +21,8 @@
         $pages.css({"height": $h});
         $page1.css({"height": $h});
         $page1.addClass("moving");
-        $(window).mousewheel(function (event, dat) {
+        $(window).mousewheel(function test(event, dat) {
+            $(window).off("mousewheel");
             if(dat === -1){
                 $nowScreen++;
             }
@@ -43,6 +44,9 @@
             }else{
                 $pages.eq($nowScreen-1).addClass("moving").siblings().removeClass("moving");
             }
+            setTimeout(function () {
+                $(window).on("mousewheel", test);
+            }, 300);
 
         });
         $point.click(function () {

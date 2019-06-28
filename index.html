@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="jqueryLib/jquery-1.12.4.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url: "data.json",
+        type: "GET",
+        dataType: "json",
+    })
+        .done(function (dat) {
+        console.log(dat);
+    })
+        .fail(function () {
+            console.log("服务器超时");
+        })
+
+</script>
+<body>
+
+</body>
+</html>

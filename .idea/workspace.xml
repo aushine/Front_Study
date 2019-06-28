@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92bcc03-d8ba-484e-b299-9a590bd207e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/scroll_screen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/claw.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gvdc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/gvdc2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/jeer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tmjm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/wlop1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/xnna.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/yyna.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_code_02/整屏滚动.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_code_02/整屏滚动.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_code_02/整屏滚动.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,32 +32,23 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4152452">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test_code_02/toDoList.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="528">
-                  <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+                <state relative-caret-position="660">
+                  <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端15天(3h53m)jquery/代码/整屏滚动.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-118">
-                  <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/scroll_screen.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="33">
-                  <caret line="71" column="2" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="2" />
+                <state relative-caret-position="324">
+                  <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -72,7 +56,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test_code_02/jquery_03.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-532">
+                <state relative-caret-position="702">
                   <caret line="78" column="57" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
                 </state>
               </provider>
@@ -81,12 +65,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test_code_02/整屏滚动.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="429">
-                  <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+                <state relative-caret-position="48">
+                  <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
                   <folding>
                     <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#b#0;n#p#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -98,10 +82,46 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1218">
+                  <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test_code_02/silde_image.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="231">
+                  <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端15天(3h53m)jquery/代码/css/test.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+                <state relative-caret-position="90">
+                  <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
@@ -115,8 +135,8 @@
       <list>
         <option value="Tag Library Descriptor" />
         <option value="Python Script" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -136,8 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/6-4.html" />
-        <option value="$PROJECT_DIR$/day_day_fresh/css/reset.css" />
         <option value="$PROJECT_DIR$/b.html" />
         <option value="$PROJECT_DIR$/day_day_fresh/css/main.css" />
         <option value="$PROJECT_DIR$/day_day_fresh/index.html" />
@@ -183,10 +201,12 @@
         <option value="$PROJECT_DIR$/test_code_02/jquery_05.html" />
         <option value="$PROJECT_DIR$/test_code_02/jquery_03.html" />
         <option value="$PROJECT_DIR$/js/test_code_02/toDoList.html" />
-        <option value="$PROJECT_DIR$/test_code_02/toDoList.html" />
         <option value="E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端15天(3h53m)jquery/代码/整屏滚动.html" />
-        <option value="$PROJECT_DIR$/test_code_02/整屏滚动.html" />
         <option value="$PROJECT_DIR$/css/scroll_screen.css" />
+        <option value="$PROJECT_DIR$/test_code_02/整屏滚动.html" />
+        <option value="$PROJECT_DIR$/test_code_02/toDoList.html" />
+        <option value="$PROJECT_DIR$/data.json" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -205,11 +225,11 @@
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1578" />
-    <option name="height" value="1002" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1029" />
+    <option name="y" value="42" />
+    <option name="width" value="1877" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -244,7 +264,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -255,22 +275,22 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="M:\HTM_TEST\Front_Study" />
+      <recent name="M:\HTM_TEST\Front_Study\images" />
+      <recent name="M:\HTM_TEST\Front_Study\jqueryLib" />
+      <recent name="M:\HTM_TEST\Front_Study\css" />
+      <recent name="M:\HTM_TEST\front_study_Rode_2\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="M:\HTM_TEST\Front_Study" />
       <recent name="M:\HTM_TEST\Front_Study\js" />
       <recent name="M:\HTM_TEST\Front_Study\css" />
       <recent name="M:\HTM_TEST\front_study_Rode_2\test_code" />
       <recent name="M:\HTM_TEST\front_study_Rode_2" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="M:\HTM_TEST\Front_Study\images" />
-      <recent name="M:\HTM_TEST\Front_Study\jqueryLib" />
-      <recent name="M:\HTM_TEST\Front_Study\css" />
-      <recent name="M:\HTM_TEST\front_study_Rode_2\js" />
-      <recent name="M:\HTM_TEST\front_study_Rode_2\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -399,7 +419,8 @@
       <workItem from="1561422430784" duration="49191000" />
       <workItem from="1561501691106" duration="1234000" />
       <workItem from="1561535043705" duration="8276000" />
-      <workItem from="1561603433932" duration="37976000" />
+      <workItem from="1561603433932" duration="42120000" />
+      <workItem from="1561684340839" duration="10363000" />
     </task>
     <task id="LOCAL-00001" summary="ab">
       <created>1559037433989</created>
@@ -674,11 +695,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561617487316</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="2019-6-27">
+      <created>1561643629146</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1561643629146</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324988000" />
+    <option name="totallyTimeSpent" value="339495000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -690,10 +718,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1029" y="42" width="1877" height="1042" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15565032" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12052834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -701,7 +729,7 @@
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Statistic" order="0" weight="0.33200794" />
+      <window_info anchor="bottom" id="Statistic" order="0" weight="0.33179724" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32931355" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.24186552" />
@@ -729,7 +757,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15565032" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12052834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -737,10 +765,10 @@
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Statistic" order="0" weight="0.33200794" />
+      <window_info anchor="bottom" id="Statistic" order="0" weight="0.33179724" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32931355" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.24186552" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.24186552" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -778,7 +806,8 @@
     <MESSAGE value="2019-6-23" />
     <MESSAGE value="2019-6-25" />
     <MESSAGE value="2019-6-26" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019-6-26" />
+    <MESSAGE value="2019-6-27" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019-6-27" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -789,23 +818,6 @@
     <SUITE FILE_PATH="coverage/Front_Study$Common_factor.coverage" NAME="Common_factor Coverage Results" MODIFIED="1561629578362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_code/test03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day_day_fresh/css/reset.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day_day_fresh/images/icons.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/sakura1.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -967,13 +979,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_code_02/silde_image.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="128" column="17" lean-forward="true" selection-start-line="128" selection-start-column="17" selection-end-line="128" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_code_02/elementSize.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-161">
@@ -1009,13 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_code_02/jquery_03.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-532">
-          <caret line="78" column="57" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/haiqb.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1042,44 +1040,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_code_02/toDoList.html">
+    <entry file="file://$PROJECT_DIR$/test_code_02/jquery_03.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        <state relative-caret-position="702">
+          <caret line="78" column="57" selection-start-line="78" selection-start-column="57" selection-end-line="78" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端15天(3h53m)jquery/代码/css/test.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state relative-caret-position="90">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端15天(3h53m)jquery/代码/整屏滚动.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="971">
+          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/scroll_screen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1218">
+          <caret line="37" column="28" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_code_02/toDoList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="57" column="36" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_code_02/silde_image.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="98" column="22" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_code_02/整屏滚动.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="46" column="11" lean-forward="true" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="11" />
+        <state relative-caret-position="48">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b#0;n#p#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b#0;n#p#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/scroll_screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="71" column="2" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="2" />
         </state>
       </provider>
     </entry>
