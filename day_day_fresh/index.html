@@ -5,6 +5,29 @@
     <title>天天生鲜首页</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var login_btn = $( ".login_btns" );
+            var login_after = $( ".user_login_after" );
+            var login = $( ".login_btns li" );
+            var user_name = $( ".user_login_after a" );
+                $.ajax({
+                    url: "../data.json",
+                    type: "get",
+                    dataType: "json"
+                }).done(function (data) {
+                    user_name.html(data.name);
+                }).fail(function () {
+                    alert("找不到对象?");
+                });
+            login.click(function () {
+                login_btn.css("display", "none");
+
+                login_after.css("display", "block");
+            })
+        })
+    </script>
 </head>
 <body>
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+           var $userName = $("#userName");
+           var $userAge = $("#userAge");
+
+            $.ajax({
+                url:'../data.json',
+                type:'get',
+                dataType:'json',
+            }).done(function (data) {
+                $userName.html(data.name);
+                $userAge.html(data.age);
+                console.log(data);
+            })
+                .fail(function (data) {
+                    alert("服务器信息:404");
+                });
+
+        });
+    </script>
+</head>
+<body>
+<p>姓名: <span id="userName"></span></p>
+<p>年龄: <span id="userAge"></span></p>
+</body>
+</html>
