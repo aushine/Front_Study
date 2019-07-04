@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style type="text/css">
+    *{
+        padding:0;
+        margin:0;
+        list-style: none;
+    }
+    .slide_con{
+        position:relative;
+    }
+    .slide_list{
+        width:400px;
+        height:500px;
+        border:3px solid red;
+        overflow:hidden;
+    }
+    .slide_list li{
+        width:400px;
+        height:500px;
+        position: absolute;
+        left:400px;
+    }
+    .slide_list li:nth-child(1){
+        left:0;
+    }
+    .slide_list li img{
+        width:400px;
+        height:500px;
+    }
+    .slide_con{
+        width:400px;
+        height:500px;
+    }
+    .slide_con .points{
+        border:1px solid rebeccapurple;
+        position:absolute;
+        right: 100px;
+    }
+    .points li{
+        width:10px;
+        height:10px;
+        background-color: #666666;
+    }
+</style>
+<body>
+<div class="slide_con">
+<ul class="slide_list">
+    <li><img src="../images/guweiz_1.jpg" alt="图片1"></li>
+    <li><img src="../images/guweiz_2.jpg" alt="图片2"></li>
+    <li><img src="../images/guweiz_3.jpg" alt="图片3"></li>
+    <li><img src="../images/guweiz_4.jpg" alt="图片4"></li>
+    <li><img src="../images/guweiz_5.jpg" alt="图片5"></li>
+</ul>
+    <ul class="points">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

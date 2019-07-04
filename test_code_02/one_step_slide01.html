@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <style type="text/css">
+        *{
+            padding:0;
+            margin:0;
+            list-style: none;
+        }
+        .slide_con{
+            width: 400px;
+            height: 500px;
+            position:relative;
+            border: 3px solid blue;
+        }
+        .slide_list{
+            overflow: hidden;
+            height:500px;
+            position: relative;
+        }
+        .slide_con li img{
+            width: 400px;
+            height: 500px;
+        }
+        .slide_con .slide_list li{
+            position: absolute;
+            left:400px;
+        }
+        .slide_con .slide_list li:nth-child(1){
+            left:0;
+        }
+        .points{
+            height:10px;
+            position: absolute;
+            left:50%;
+            margin-left: -35px;
+            bottom: 10px;
+        }
+        .points li{
+            cursor: pointer;
+            float:left;
+            margin-right: 5px;
+            width:10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #666666;
+        }
+        .points .checked{
+            background-color: red;
+        }
+        .left_btn, .right_btn{
+            position: absolute;
+            background-color: #66ccff;
+            color:white;
+            font-size: 24px;
+            cursor:pointer;
+        }
+        .left_btn{
+            left:0;
+            top:50%;
+        }
+        .right_btn{
+            right:0;
+            top:50%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var $slide_img = $( ".slide_list li" );
+            var $point = $( ".slide_con .points li" );
+            var $left_btn = $( ".left_btn" );
+            var $right_btn = $( ".right_btn" );
+            var now_img = 0;
+            var next_img = 0;
+            var trans_lock = false;
+            /*console.log($slide_img);*/
+            $point.click(function test() {
+                $point.off("click");
+                next_img = $( this ).index();
+                /*console.log($( this ).index());*/
+                fnTransForm(now_img, next_img);
+                now_img = next_img;
+                $point.on("click", test);
+            });
+        $left_btn.click(function test1() {
+            $left_btn.off("click");
+            if(now_img === 0){
+                next_img = $slide_img.length-1;
+            }
+            else{
+                next_img-=1;
+            }
+            fnTransForm();
+            now_img=next_img;
+            setTimeout(function () {
+                $left_btn.on("click", test1);
+            }, 300);
+
+        });
+        $right_btn.click(function () {
+            if(now_img === $slide_img.length-1){
+                next_img = 0;
+            }
+            else{
+                next_img += 1;
+            }
+            fnTransForm();
+            now_img=next_img;
+        });
+        function fnTransForm() {
+            if(trans_lock){
+                console.log("go to hell")
+            }
+            else{
+                trans_lock = true;
+            if(next_img > now_img){
+                $slide_img.eq(now_img).animate({"left": -400});
+                $slide_img.eq(next_img).css("left", 400);
+            }else if(next_img < now_img){
+                $slide_img.eq(now_img).animate({"left": 400});
+                $slide_img.eq(next_img).css("left", -400);
+            }
+            /*console.log(now_img+"to"+next_img);*/
+            $slide_img.eq( next_img ).animate({"left": "0"});
+            $point.eq( next_img ).addClass( "checked" ).siblings().removeClass( "checked" );
+            }}
+        setInterval(function () {
+            if(now_img === $slide_img.length-1){
+                next_img = 0;
+            }
+            else{
+            next_img += 1;
+            }
+            fnTransForm();
+            now_img=next_img;
+        }, 1300);
+        })
+    </script>
+</head>
+<body>
+<div class="slide_con">
+    <ul class="slide_list">
+        <li><img src="../images/guweiz_1.jpg" alt="图片1"></li>
+        <li><img src="../images/guweiz_2.jpg" alt="图片2"></li>
+        <li><img src="../images/guweiz_3.jpg" alt="图片3"></li>
+        <li><img src="../images/guweiz_4.jpg" alt="图片4"></li>
+        <li><img src="../images/guweiz_5.jpg" alt="图片5"></li>
+    </ul>
+    <ul class="points">
+        <li class="checked"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="left_btn">&lt;</div>
+    <div class="right_btn">&gt;</div>
+</div>
+</body>
+</html>
