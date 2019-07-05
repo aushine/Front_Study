@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d92bcc03-d8ba-484e-b299-9a590bd207e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_code_02/one_step_slide.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_code_02/one_step_slide01.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_code_02/ajax_Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_code_02/ajax_Test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_code_02/one_step_slide01.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_code_02/one_step_slide01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_code_02/silde_image.html" beforeDir="false" afterPath="$PROJECT_DIR$/test_code_02/silde_image.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,14 +32,14 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.614083">
+    <splitter split-orientation="horizontal" split-proportion="0.4808959">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/my_index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="615">
-                  <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+                <state relative-caret-position="2268">
+                  <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -46,21 +47,44 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test_code_02/one_step_slide.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1781">
-                  <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+                <state relative-caret-position="2196">
+                  <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test_code_02/one_step_slide01.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="80">
+                  <caret line="90" column="30" lean-forward="true" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test_code_02/one_step_slide01.html">
+            <entry file="file://$PROJECT_DIR$/test_code_02/ajax_Test.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="666">
-                  <caret line="131" column="20" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#1925#1929#1" expanded="true" />
-                    <element signature="e#1963#1967#1" expanded="true" />
-                  </folding>
+                <state relative-caret-position="324">
+                  <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端15天(3h53m)jquery/代码/整屏滚动.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1152">
+                  <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端16天(3h25m)jquery+案例/代码/slide/js/slide.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
@@ -68,7 +92,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="737">
+                <state relative-caret-position="1224">
                   <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
                 </state>
               </provider>
@@ -77,8 +101,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端16天(3h25m)jquery+案例/代码/360联想词获取.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="252">
-                  <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+                <state relative-caret-position="1116">
+                  <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -86,8 +110,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test_code_02/jquery_03.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2304">
-                  <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+                <state relative-caret-position="1764">
+                  <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -132,8 +156,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test_code_02/silde_image.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="82" column="17" lean-forward="true" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+                <state relative-caret-position="360">
+                  <caret line="80" column="39" lean-forward="true" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
@@ -177,7 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jsp/复习题/复习题3-11.jsp" />
         <option value="$PROJECT_DIR$/test_code/trans_Test.html" />
         <option value="$PROJECT_DIR$/test_code/6-16.html" />
         <option value="$PROJECT_DIR$/test_code/Animation_Test.html" />
@@ -207,7 +230,6 @@
         <option value="$PROJECT_DIR$/a.py" />
         <option value="$PROJECT_DIR$/test_code_02/accordion.html" />
         <option value="$PROJECT_DIR$/Common_factor.py" />
-        <option value="$PROJECT_DIR$/test_code_02/silde_image.html" />
         <option value="$PROJECT_DIR$/test_code_02/jquery_04.html" />
         <option value="$PROJECT_DIR$/test_code_02/jquery_05.html" />
         <option value="$PROJECT_DIR$/test_code_02/jquery_03.html" />
@@ -221,13 +243,15 @@
         <option value="$PROJECT_DIR$/data.json" />
         <option value="$PROJECT_DIR$/day_day_fresh/js/data.json" />
         <option value="$PROJECT_DIR$/day_day_fresh/index.html" />
-        <option value="$PROJECT_DIR$/test_code_02/ajax_Test.html" />
         <option value="$PROJECT_DIR$/test_code_02/获取360联想词.html" />
         <option value="$PROJECT_DIR$/main.css" />
         <option value="$PROJECT_DIR$/my_index.html" />
         <option value="E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端16天(3h25m)jquery+案例/代码/360联想词获取.html" />
         <option value="$PROJECT_DIR$/test_code_02/one_step_slide.html" />
+        <option value="E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端16天(3h25m)jquery+案例/代码/slide/js/slide.js" />
         <option value="$PROJECT_DIR$/test_code_02/one_step_slide01.html" />
+        <option value="$PROJECT_DIR$/test_code_02/silde_image.html" />
+        <option value="$PROJECT_DIR$/test_code_02/ajax_Test.html" />
       </list>
     </option>
   </component>
@@ -247,10 +271,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="2036" />
-    <option name="y" value="34" />
-    <option name="width" value="1892" />
-    <option name="height" value="994" />
+    <option name="x" value="1976" />
+    <option name="y" value="17" />
+    <option name="width" value="1838" />
+    <option name="height" value="983" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -260,8 +284,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -446,7 +470,9 @@
       <workItem from="1561866424494" duration="1353000" />
       <workItem from="1561894785457" duration="4161000" />
       <workItem from="1562073768223" duration="879000" />
-      <workItem from="1562236525727" duration="11656000" />
+      <workItem from="1562236525727" duration="16791000" />
+      <workItem from="1562289474936" duration="794000" />
+      <workItem from="1562297033334" duration="1681000" />
     </task>
     <task id="LOCAL-00001" summary="ab">
       <created>1559037433989</created>
@@ -749,11 +775,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562073793636</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="2019-7-2">
+      <created>1562249008058</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1562249008058</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369007000" />
+    <option name="totallyTimeSpent" value="376617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -765,10 +798,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2723" y="29" width="1892" height="994" extended-state="0" />
+    <frame x="1965" y="41" width="1838" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15727699" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15681544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -804,7 +837,7 @@
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15727699" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15681544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -867,27 +900,6 @@
     <SUITE FILE_PATH="coverage/Front_Study$Common_factor.coverage" NAME="Common_factor Coverage Results" MODIFIED="1561629578362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_code_02/jquery_00.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_code_02/jquery_choicetor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="74" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_code_02/load_jquery.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_code_02/location_test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -993,13 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端15天(3h53m)jquery/代码/整屏滚动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="971">
-          <caret line="48" column="35" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/daliy_fresh_m/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1032,13 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4428">
           <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_code_02/ajax_Test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1077,10 +1075,101 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/guweiz_3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/guweiz_2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/guweiz_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/guweiz_5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/guweiz_4.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/07web全栈开发阶段-Django框架-Git版本管理-redis数据库-天天生鲜项目/11-14代码V3.1/Django代码V3.1/day12-天天生鲜项目-页面静态化-缓存-详情页-列表页/4-代码/dailyfresh/static/js/jquery.cookie.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/07web全栈开发阶段-Django框架-Git版本管理-redis数据库-天天生鲜项目/11-14代码V3.1/Django代码V3.1/day12-天天生鲜项目-页面静态化-缓存-详情页-列表页/4-代码/dailyfresh/static/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_code_02/one_step_slide.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2196">
+          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端15天(3h53m)jquery/代码/整屏滚动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端16天(3h25m)jquery+案例/代码/slide/js/slide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端16天(3h25m)jquery+案例/代码/360联想词获取.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test_code_02/jquery_03.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
-          <caret line="64" column="14" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+        <state relative-caret-position="1764">
+          <caret line="49" column="35" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_code_02/整屏滚动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#p#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#p#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1105,84 +1194,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
+    <entry file="file://$PROJECT_DIR$/test_code_02/one_step_slide01.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/PYTHON学习内容/jqye/课件资料/基础班-就业班课件资料_1-4基础班  5-14就业班/06前端开发阶段/7-10前端资料/前端资料/前端16天(3h25m)jquery+案例/代码/360联想词获取.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_code_02/整屏滚动.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#p#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#p#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#p#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/guweiz_3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/guweiz_2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/guweiz_1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/guweiz_5.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/guweiz_4.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/my_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="63" column="30" lean-forward="true" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_code_02/one_step_slide.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1781">
-          <caret line="61" column="17" lean-forward="true" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        <state relative-caret-position="80">
+          <caret line="90" column="30" lean-forward="true" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_code_02/silde_image.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="82" column="17" lean-forward="true" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+        <state relative-caret-position="360">
+          <caret line="80" column="39" lean-forward="true" selection-start-line="80" selection-start-column="39" selection-end-line="80" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+    <entry file="file://$PROJECT_DIR$/test_code_02/ajax_Test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_code_02/one_step_slide01.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="131" column="20" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
-          <folding>
-            <element signature="e#1925#1929#1" expanded="true" />
-            <element signature="e#1963#1967#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
     </entry>

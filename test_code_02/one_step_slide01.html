@@ -83,10 +83,10 @@
                 next_img = $( this ).index();
                 /*console.log($( this ).index());*/
                 fnTransForm(now_img, next_img);
-                now_img = next_img;
                 $point.on("click", test);
             });
         $left_btn.click(function test1() {
+            clearTimeout(timer01);
             $left_btn.off("click");
             if(now_img === 0){
                 next_img = $slide_img.length-1;
@@ -95,13 +95,13 @@
                 next_img-=1;
             }
             fnTransForm();
-            now_img=next_img;
-            setTimeout(function () {
+            var timer01 = setTimeout(function () {
                 $left_btn.on("click", test1);
             }, 300);
-
         });
-        $right_btn.click(function () {
+        $right_btn.click(function test10() {
+            clearTimeout(timer10);
+            $right_btn.off("click");
             if(now_img === $slide_img.length-1){
                 next_img = 0;
             }
@@ -109,36 +109,40 @@
                 next_img += 1;
             }
             fnTransForm();
-            now_img=next_img;
+            var timer10 = setTimeout(function () {
+                $right_btn.on("click", test10);
+            }, 300);
         });
-        function fnTransForm() {
-            if(trans_lock){
-                console.log("go to hell")
-            }
-            else{
-                trans_lock = true;
-            if(next_img > now_img){
-                $slide_img.eq(now_img).animate({"left": -400});
-                $slide_img.eq(next_img).css("left", 400);
-            }else if(next_img < now_img){
-                $slide_img.eq(now_img).animate({"left": 400});
-                $slide_img.eq(next_img).css("left", -400);
-            }
-            /*console.log(now_img+"to"+next_img);*/
-            $slide_img.eq( next_img ).animate({"left": "0"});
-            $point.eq( next_img ).addClass( "checked" ).siblings().removeClass( "checked" );
-            }}
-        setInterval(function () {
+        var t = setInterval(fnAutoPlay, 1500);
+        function fnAutoPlay(){
             if(now_img === $slide_img.length-1){
                 next_img = 0;
             }
             else{
-            next_img += 1;
+                next_img += 1;
             }
             fnTransForm();
-            now_img=next_img;
-        }, 1300);
-        })
+        }
+        function fnTransForm() {
+            clearInterval(t);
+            if(trans_lock){}
+            else{
+                trans_lock = true;
+                if(next_img > now_img){
+                    $slide_img.eq(now_img).animate({"left": -400});
+                    $slide_img.eq(next_img).css("left", 400);
+                }else if(next_img < now_img){
+                    $slide_img.eq(now_img).animate({"left": 400});
+                    $slide_img.eq(next_img).css("left", -400);
+                }
+                /*console.log(now_img+"to"+next_img);*/
+                $slide_img.eq( next_img ).animate({"left": "0"});
+                $point.eq( next_img ).addClass( "checked" ).siblings().removeClass( "checked" );
+                trans_lock = false;
+                t = setInterval(fnAutoPlay, 1500);
+                now_img = next_img;
+            }}
+        });
     </script>
 </head>
 <body>

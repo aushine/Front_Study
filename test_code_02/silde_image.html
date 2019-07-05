@@ -84,7 +84,7 @@
                 * 破解方法1: 设置一个Lock值, 执行动画前检测lock值是否为true, 为false时表示有其他动画在事件清单中, 每次执行动画前将lock值锁定(设置为flase)
                 * 破解方法2: 每次点击前把click事件之间关闭, 执行完全部的再开启click事件
                 * */
-                $leftAndRightBtn.off("click");
+                $leftAndRightBtn.off( "click" );
                 if ($leftAndRightBtn.index( $(this) ) === 0){
                     // 点击左右箭头,  left+=700, 按下左箭头时如果当前是第一张图(slide的left值为0) 跳到最后一张(left值设置为-3500)
                         if( $slideNowLeftVal === 0){
