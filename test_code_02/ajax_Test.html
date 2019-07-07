@@ -7,14 +7,14 @@
     <script type="text/javascript">
 
         $(function () {
-           var $userName = $("#userName");
-           var $userAge = $("#userAge");
+           var $userName = $( "#userName" );
+           var $userAge = $( "#userAge" );
 
             $.ajax({
                 url:'../data.json',
                 type:'get',
                 dataType:'json',
-            }).done(function (data) {
+            }).done(function (data){
                 $userName.html(data.name);
                 $userAge.html(data.age);
                 console.log(data);
@@ -28,7 +28,6 @@
 <body>
 <p>姓名: <span id="userName"></span></p>
 <p>年龄: <span id="userAge"></span></p>
-<!--https://sug.so.360.cn/suggest?callback=suggest_so&encodein=utf-8
-&encodeout=utf-8&format=json&fields=word&word=d-->
+<!--https://sug.so.360.cn/suggest?callback=suggest_so&encodein=utf-8&encodeout=utf-8&format=json&fields=word&word=d-->
 </body>
 </html>

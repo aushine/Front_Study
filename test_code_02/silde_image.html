@@ -112,7 +112,6 @@
             setInterval(function() {
                 // 此定时器重复执行不断的更新checked点
                 $slideNowLeftVal = parseInt($slide.css("left"));
-
                 // 设置checked点的值的时候,在跳转到第一张图和最后一张图(监测出的left值会是"34XXpx"和"2.XXpx")的时候会出现不能整除的情况
                 // 原因猜测, 在动画播放时(left值还在变换的过程中就执行到了这一条)
                 // 解决方法,第一张图按左方向键跳到最后一张图的时候索引值向上取整,最后一张按右箭头跳到第一张图的时候向下取整
