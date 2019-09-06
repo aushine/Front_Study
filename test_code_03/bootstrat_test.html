@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .container-fluid{
+            height:40px;
+            border:1px solid red;
+            background-color: floralwhite;
+            text-align: center;
+            font-size: 20px;
+        }
+        .container{
+            height:40px;
+            border:1px solid darkred;;
+            background-color: #666666;
+            text-align: center;
+            font-size: 20px;
+        }
+        div[class*="col-"]{
+            border:1px solid red;
+            background-color: #66ccff;
+            height:38px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">这是流体容器</div>
+    <div class="container">这是响应布局容器</div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">1</div>
+            <div class="col-lg-4">2</div>
+            <div class="col-lg-4">3</div>
+        </div>
+        <br>
+    <div class="row">
+        <div class="col-md-4">1</div>
+        <div class="col-md-4">2</div>
+        <div class="col-md-4">3</div>
+    </div>
+        <br>
+    <div class="row">
+        <div class="col-sm-4">1</div>
+        <div class="col-sm-4">2</div>
+        <div class="col-sm-4">3</div>
+    </div>
+        <br>
+    <div class="row">
+        <div class="col-xs-4">1</div>
+        <div class="col-xs-4">2</div>
+        <div class="col-xs-4">3</div>
+    </div>
+    </div>
+</body>
+</html>

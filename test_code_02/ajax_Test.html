@@ -11,13 +11,11 @@
            var $userAge = $( "#userAge" );
 
             $.ajax({
-                url:'../data.json',
+                url:'https://api.t.sina.com.cn/short_url/shorten.json?source=3984043205&url_long=https://www.sixjiang.cn/baidu/?q=b&callback=jQuery21106588654793776751_1564217491965&_=1564217491966',
                 type:'get',
                 dataType:'json',
             }).done(function (data){
-                $userName.html(data.name);
-                $userAge.html(data.age);
-                console.log(data);
+                console.log(data.url_short);
             })
                 .fail(function (data) {
                     alert("服务器信息:404");

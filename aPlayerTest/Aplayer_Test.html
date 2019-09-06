@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/APlayer.min.css">
+</head>
+<body>
+    <div class="aplayer"></div>
+</body>
+<script src="../js/APlayer.min.js" type="text/javascript"></script>
+<script src="../jqueryLib/jquery-1.12.4.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var song_json = null;
+    var a = 1;
+    $.ajax({
+        url:"../json/my_song_list.json",
+        type:"get",
+        async:false,
+        dataType:"json",
+    }).done(function f(dat) {
+        // console.log(dat[0]);
+        song_json = dat[0];
+    });
+    const ap = new APlayer({
+        container:$(".aplayer"),
+        fixed:true,
+        audio:[{
+            name:"碧海问舟（游戏原版）",
+            artist:"1",
+            url: "M:/CloudMusic/居君裔 - 碧海问舟（游戏原版）.mp3",
+            cover: song_json.cover
+        }]
+    })
+</script>
+</html>

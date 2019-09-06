@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../jqueryLib/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../js/getParmater.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var $btn1 = $( "#btn1" );
+            var $link1 = $( "#link1" );
+            var s = 0;
+            var old_link = $link1.attr("href");
+            var dat = location.search;
+            var Adat = getParmater(dat);
+            console.log(Adat);
+            if(Adat["xu_s"]){
+                s = parseInt(Adat["xu_s"]);
+            }else{
+                s = 1;
+            }
+            $btn1.click(function () {
+                s += 1;
+                $link1.attr("href", old_link+"?xu_s="+s);
+                console.log($link1.attr("href"));
+                /*console.log(s);*/
+            })
+
+        })
+    </script>
+</head>
+<body>
+    <h1>这是页面2</h1>
+    <a href="location_test1.html" id="link1">到1</a>
+    <button class="btn1" id="btn1">按钮1</button>
+</body>
+</html>

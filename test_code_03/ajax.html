@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $.ajax({
+            url:'https://api.t.sina.com.cn/short_url/shorten.json?source=3984043205&url_long=https://www.sixjiang.cn/baidu/?q=p&callback=jQuery211004612987014831604_1564217630256&_=1564217630257',
+            type:'get',
+            dataType:'json',
+        }).done(function (data){
+            console.log(data.url_short);
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

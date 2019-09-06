@@ -3,11 +3,39 @@
 <head>
 	<meta charset="UTF-8">
 	
-	<title>Document</title>
+	<title>天天生鲜手机端</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="./js/set_root.js"></script>
-	<link rel="stylesheet" href="css/main.css">
+	<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="./js/swiper.jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                prevButton: '.swiper-button-prev',
+                nextButton: '.swiper-button-next',
+                // 初始的幻灯片是第几张
+                initialSlide :0,
+
+                // 小圆点是否可点击
+                paginationClickable: false,
+
+                //是否连续播放(设置false会在最后一张返回)
+                loop: true,
+
+                // 设置多长时间间隔播放一张
+                autoplay:3000,
+
+                // 用户操作后还是否自动播放
+                autoplayDisableOnInteraction:true
+            })
+        });
+
+    </script>
+
 </head>
 <body>
 	<div class="frame_div">
@@ -35,7 +63,23 @@
 		</div>
 	</div>
 	<div class="center_con">
-		<div class="slide"><img src="image/slide.jpg" alt=""></div>
+
+		<div class="slide">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href="#"><img src="image/slide.jpg" alt="幻灯片"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/slide.jpg" alt="幻灯片"></a></div>
+                    <div class="swiper-slide"><a href="#"><img src="image/slide.jpg" alt="幻灯片"></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+			<!--<img src="image/slide.jpg" alt="">-->
+
+		</div>
+
 		<div class="menu_con">
 		<ul class="menu">
 			<li><a href="#"></a>
