@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>BFW NEW PAGE</title>
+    <script id="bfwone" type="text/javascript" src="http://repo.bfw.wiki/bfwrepo/js/bfwone.js"></script>
+    <script type="text/javascript">
+        bready(function() {
+            use(["highlight.pack", "highlightstyles/default"], function() {
+                hljs.initHighlightingOnLoad();
+            });
+
+        });
+        function detectlang() {
+            let snippet = document.querySelector('#snippet pre');
+            hljs.highlightBlock(snippet);
+
+            document.getElementById('language').innerHTML = "检测到开发语言为："+snippet.result.language;
+
+        }
+    </script>
+</head>
+<body>
+<div id="snippet">
+        <pre><code>
+                class A():
+                    def __init__(self):
+                        self.a = a;
+                        self.b = b;
+                    def t():
+                        for each in range(1, 10):
+                            print(each)
+            </code></pre>
+</div>
+
+<input type="button" value="检测编程语言类型"BfwOnclick="detectlang();" />
+<div id="language"></div>
+</body>
+</html>

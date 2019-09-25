@@ -1,0 +1,127 @@
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    font: 16px "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+ul, li {
+    list-style: none;
+}
+a,a:hover,a:visited,a:active {
+    color: #fff;
+    text-decoration: none;
+}
+.main-nav{
+    width: 100%;
+    padding: 5px 0;
+    background: #1C2327;
+    height: 50px;
+    position: relative;
+}
+.colorBar{
+    width:400%;
+    position: absolute;
+    top: 0;
+}
+.colorBar div:nth-child(even){
+    transform:rotate(180deg);
+}
+.ColorBar{
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    height: 5px;
+    float:left;
+    width: 25%;
+}
+/*.container{
+    width:1200px;
+    height:100%;
+    margin:auto;
+}*/
+.top_nav_bar{
+    width:auto;
+    height:100%;
+}
+.top_nav_bar h1{
+    margin:-4px 60px 0 0;
+    font-weight:normal;
+    float:left;
+    font-size: 22px;
+}
+.top_nav_bar h1 a{
+    text-decoration: none;
+}
+.navi{
+    margin-top: 1%;
+    float:left;
+    padding:0;
+}
+.top_nav_bar h1 a{
+    padding:0;
+    line-height:50px;
+}
+
+.navi li{
+    display: inline;
+    float: left;
+    text-align: center;
+    color: #fff;
+    cursor:pointer;
+    width:100px;
+}
+.navi li a:hover, .navi .navi, .selected > a, .navi li:hover {
+    color: #00c1de;
+}
+.search-box{
+    margin-top: 9px;
+    font-size: 1.1em;
+    color:white;
+    height: 39px;
+    float: right;
+    display: inline;
+    cursor: pointer;
+}
+.search-box form{
+    float: right;
+    color: black;
+}
+.search-box i{
+    margin-right: -1px;
+    margin-top: 1px;
+    border: 2px solid white;
+    padding: 3px 3px 3px 4px;
+    cursor:pointer;
+
+}
+
+
+.sub-menu{
+    display:none;
+    background:#1C2327;
+    padding: 0;
+
+}
+.sub-menu li{
+    position: relative;
+    text-align: center;
+    padding: 0;
+    clear: both;
+    width: 100%;
+    line-height: 2.1em;
+}
+.sub-menu li:first-child{
+    margin-top: 12px;
+}
+.navi li:hover i{
+    transform:rotate(180deg);
+}
+.navi li i{
+    padding:0 5px;
+    transform-origin: center center;
+    color:#fff;
+    transition: all 300ms linear;
+}
+.content{
+    border:1px solid red;
+    margin-top: 30px;
+    height:1600px;
+}

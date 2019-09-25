@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script type="text/javascript">
-        var re01 = new RegExp("a","i");
-
-        var re02 = /a/;
-
-        var sTr01 = "abcdefg";
-
-        alert (re02.test(sTr01))
+        var f = n => {if (n ===1){return 1;}if (n ===2) {return 1;}return f(n-1) + f(n-2);};
+        alert(f(5));
     </script>
 </head>
 <body>
-
 </body>
 </html>
